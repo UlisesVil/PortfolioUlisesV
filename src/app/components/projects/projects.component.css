@@ -1,0 +1,159 @@
+
+.project .card{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project img{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    /*border-radius: 10px;*/
+
+}
+
+.card_layer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.247);
+    border-radius: 10px;
+
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+.card_title, .card_description{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.enter-top{
+    animation-name: enterTop;
+}
+.enter-bottom{
+    animation-name: enterBottom;
+}
+.enter-left{
+    animation-name: enterLeft;
+}
+.enter-right{
+    animation-name: enterRight;
+}
+
+
+.leave-top{
+    animation-name: leaveTop;
+}
+.leave-bottom{
+    animation-name: leaveBottom;
+}
+.leave-left{
+    animation-name: leaveLeft;
+}
+.leave-right{
+    animation-name: leaveRight;
+}
+
+
+@keyframes enterTop{
+    from{
+        top: -100%;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveTop{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: -100%;
+        left: 0;
+    }
+}
+
+@keyframes enterBottom{
+    from{
+        top: 100%;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveBottom{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 100%;
+        left: 0;
+    }
+}
+
+@keyframes enterLeft{
+    from{
+        top: 0;
+        left: -100%;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveLeft{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: -100%;
+    }
+}
+
+@keyframes enterRight{
+    from{
+        top: 0;
+        left: 100%;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes leaveRight{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 100%;
+    }
+}

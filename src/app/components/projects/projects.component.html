@@ -1,0 +1,25 @@
+<div id="portfolioContent" >
+
+    <h2>Projectos</h2>
+    <ul class="projectsCont">
+        <li  class="project" *ngFor='let project of projects'>
+            <a [routerLink]="['/proyecto', project._id]">
+                <!--<img src="/src/assets/img/pat.jpg">-->
+                <div class="card">
+                    <img src="{{url+'get-image/'+project.image}}" *ngIf="project.image"/>
+
+                    <div class="card_layer">
+                        <h3 class="card_title">titulo del proyecto</h3>
+                        <p class="card_description">Descripcion del proyecto</p>
+                    </div>
+
+
+                </div>
+                <h3>{{project.name}}</h3>
+                <p>{{project.category}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
