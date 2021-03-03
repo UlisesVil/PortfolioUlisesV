@@ -10,6 +10,8 @@
             <h3>{{project.description}}</h3>
             <p>{{project.category}}</p>
             <p>{{project.langs}}</p>
+            <p>{{project.git}}</p>
+            <p>{{project.site}}</p>
             <p *ngIf="confirm==false" >
                 <a [routerLink]="['/editar-proyecto', project._id]" class="button-edit">Editar</a>
                 <a (click)="setConfirm(true)" class="button-delete">Borrar</a>

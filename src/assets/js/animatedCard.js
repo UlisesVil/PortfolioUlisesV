@@ -16,12 +16,24 @@ $(document).ready(function() {
                 card.addEventListener('mouseenter',(e)=>{
                     console.log('entro');
                     this.runAnimation(e.target, e);
+                    this.zoomInAnimation(e.target);
                 });
                 card.addEventListener('mouseleave',(e)=>{
                     console.log('salio');
                     this.runAnimation(e.target, e);
+                    this.zoomOutAnimation(e.target);
                 });
             });
+        }
+
+        zoomInAnimation(element){
+            element.querySelector(this.config.imgzoom).style.transition="all 1s";
+            element.querySelector(this.config.imgzoom).style.transform="scale(1.5)";
+        }
+        
+        zoomOutAnimation(element){
+            element.querySelector(this.config.imgzoom).style.transition="all 1s";
+            element.querySelector(this.config.imgzoom).style.transform="scale(1)";
         }
 
         runAnimation(element, event){
@@ -30,6 +42,8 @@ $(document).ready(function() {
            console.log(isCard);
            if(isCard){
                 let cardLayer = element.querySelector(this.config.layer);
+                //let imgzoom = element.querySelector(this.config.imgzoom);
+                //console.log(imgzoom);
                 let side = this.findSide(element, event.x, event.y);
                 console.log(side);
                 let className='';
@@ -52,7 +66,9 @@ $(document).ready(function() {
                 this.config.animations.forEach((className)=>{
                     cardLayer.classList.remove(className);
                 });
-                
+                //imgzoom.classList.add(this.config.animationzoom);
+               
+
                 cardLayer.classList.add(className);
            }
         }
@@ -100,6 +116,8 @@ $(document).ready(function() {
     new AnimatedCard({
         cards: 'card',
         layer: '.card_layer',
+        imgzoom: '.imgzoom',
+        animationzoom: 'zoomIn',
         animations: ['enter-top', 'enter-bottom', 'enter-left', 'enter-right', 'leave-top', 'leave-bottom', 'leave-left', 'leave-right'],
         suffixes: {
             top: '-top',

@@ -13,7 +13,7 @@
         </div>
 
 
-        <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" style="display: none;">
+        <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
             <p>
                 <label for="name">Nombre</label>
                 <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required/>
@@ -47,6 +47,22 @@
                 <span class="form_error" *ngIf="langs.touched && !langs.valid">
                     <strong>*Los Lenguajes son Obligatorios</strong>
                 </span>
+            </p>
+            <p>
+                <label for="git">GitHub Link</label>
+                <input type="text" name="git" #git="ngModel" [(ngModel)]="project.git" required/>
+                <span class="form_error" *ngIf="git.touched && !git.valid">
+                    <strong>*El GitHub Link es Obligatorio</strong>
+                </span>
+        
+            </p>
+            <p>
+                <label for="site">Site Link</label>
+                <input type="text" name="site" #site="ngModel" [(ngModel)]="project.site" required/>
+                <span class="form_error" *ngIf="site.touched && !site.valid">
+                    <strong>*El Site Link es Obligatorio</strong>
+                </span>
+        
             </p>
             <p>
                 <label for="image">Imagen del Proyecto</label>

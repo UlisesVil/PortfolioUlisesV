@@ -25,7 +25,7 @@ export class SkillSetComponent implements OnInit {
     private _uploadService: UploadService
   ) {
     this.title = "My Projects are powered by:";
-    this.project = new Project('','','','',2020,'','');
+    this.project = new Project('','','','',2021,'','','','');
 
    }
 
