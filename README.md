@@ -1,2 +1,2 @@
-# MEAN-Stack-Project
-MEAN Stack Project (MongoDB ExpressJS Angular NodeJS) jQuery bxSlider
+# Ulises Villa Portfolio
+Ulises Villa Portfolio 

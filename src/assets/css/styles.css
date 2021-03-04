@@ -212,7 +212,7 @@ form input[disabled]{
     padding-top: 120px;
     background: black;
     color: white;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .projectsCont{
