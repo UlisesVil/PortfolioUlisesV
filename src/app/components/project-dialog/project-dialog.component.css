@@ -1,0 +1,26 @@
+.title{
+text-align: center;
+}
+
+.generalContent{
+    border: 1px solid red;
+}
+
+.listCont{
+    width: 300px;
+    margin: 20px;
+    list-style: symbols();
+    border: 1px solid red;
+}
+
+.imgProject{
+    width: 800px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-github-alt, .fa-globe{
+    margin-right: 8px;
+}

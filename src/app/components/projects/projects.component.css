@@ -16,6 +16,12 @@
 
 }
 
+.fa-clipboard-list,
+.fa-github-alt,
+.fa-globe{
+    margin-right: 8px;
+}
+
 .card_layer{
     display: flex;
     justify-content: center;

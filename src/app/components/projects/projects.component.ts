@@ -3,6 +3,9 @@ import { Project } from '../../models/project';
 import { ProjectService } from '../../services/project.service';
 import { Global } from '../../services/global';
 
+import { MatDialog } from '@angular/material/dialog';
+import { ProjectDialogComponent } from '../../components/project-dialog/project-dialog.component';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -15,7 +18,8 @@ export class ProjectsComponent implements OnInit {
   public url: string;
 
   constructor(
-    private _projectService: ProjectService
+    private _projectService: ProjectService,
+    public dialog: MatDialog
 
   ) {
       this.url = Global.url;
@@ -40,6 +44,27 @@ export class ProjectsComponent implements OnInit {
         
       }
     );
+  }
+
+
+  openDialog(project): void{
+    const dialogRef = this.dialog.open(ProjectDialogComponent,{
+      data: {
+        name: project.name,
+        description: project.description,
+        langs: project.langs,
+        image: project.image,
+        git: project.git,
+        site: project.site
+      }
+    });
+    dialogRef.afterClosed().subscribe(res =>{
+      console.log(res);
+      if(res){
+        console.log('esta es la res del dialog');
+        
+      }
+    });
   }
   
 }

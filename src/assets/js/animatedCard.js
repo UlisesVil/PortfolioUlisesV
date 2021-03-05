@@ -79,9 +79,9 @@ $(document).ready(function() {
 
 
         findSide(card, cursorX, cursorY){
-            console.log(card, cursorX, cursorY);
+            //console.log(card, cursorX, cursorY);
             let cardBounding = card.getBoundingClientRect();
-            console.log(cardBounding);
+            //console.log(cardBounding);
 
             let leftEdge = cardBounding.left;
             let topEdge = cardBounding.top;
@@ -92,13 +92,13 @@ $(document).ready(function() {
             let diffbottomY = Math.abs(bottomEdge - cursorY);
             let diffLeftX = Math.abs(leftEdge - cursorX);
             let diffRightX = Math.abs(rightEdge - cursorX);
-            console.log(diffTopY);
-            console.log(diffbottomY);
-            console.log(diffLeftX);
-            console.log(diffRightX);
+            //console.log(diffTopY);
+            //console.log(diffbottomY);
+            //console.log(diffLeftX);
+            //console.log(diffRightX);
 
             let min = Math.min(diffTopY, diffbottomY, diffLeftX, diffRightX);
-            console.log(min);
+            //console.log(min);
 
             switch(min){
                 case diffTopY:

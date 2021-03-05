@@ -24,7 +24,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
+import { MatDialogModule } from '@angular/material/dialog';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { ProjectDialogComponent } from './components/project-dialog/project-dialog.component';
+import { CertificationDialogComponent } from './components/certification-dialog/certification-dialog.component';
 //import * as $ from 'jquery';
 
 
@@ -41,7 +44,9 @@ import { MatListModule } from '@angular/material/list';
     EditComponent,
     SliderComponent,
     ResaltadoDirective,
-    MainNavComponent
+    MainNavComponent,
+    ProjectDialogComponent,
+    CertificationDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -54,10 +59,16 @@ import { MatListModule } from '@angular/material/list';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    ProjectDialogComponent,
+    CertificationDialogComponent
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

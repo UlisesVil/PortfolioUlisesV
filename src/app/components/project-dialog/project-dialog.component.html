@@ -1,0 +1,21 @@
+<div mat-dialog-content class="generalContent">
+    <h1 class="title"><a>{{data.name}}</a></h1>
+    
+    <h3>This project is Powered by</h3>
+    <ul class="listCont">
+        
+        <li *ngFor="let lang of langs">
+            <p>{{lang}}</p>
+        </li>
+    </ul>
+
+
+    <img src="{{url+'get-image/'+data.image}}" class="imgProject"/>
+    <p>{{data.description}}</p>
+    <p><a href="{{data.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></p>
+    <p><a href="{{data.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></p>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onClickNo()">No</button>
+    <button mat-button [mat-dialog-close]="true">Si</button>
+</div>
