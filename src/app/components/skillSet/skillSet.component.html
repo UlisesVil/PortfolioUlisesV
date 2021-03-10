@@ -13,7 +13,7 @@
         </div>
 
 
-        <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" style="display:none">
+        <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)" >
             <p>
                 <label for="name">Nombre</label>
                 <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required/>
