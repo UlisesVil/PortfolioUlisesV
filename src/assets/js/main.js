@@ -34,7 +34,7 @@ $(document).ready(function() {
 /*
 $(window).ready(function(){
 
-    var width = $(window).width(); 
+    var width = $(window).width();
     console.log(width);
     if(width<'696'){
         $('.skillName').css('width','110px');

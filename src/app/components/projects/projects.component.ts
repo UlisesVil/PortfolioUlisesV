@@ -31,16 +31,7 @@ export class ProjectsComponent implements OnInit {
 
 
     
-    
-    
-    window.addEventListener('load', this.addAnimate);
-    
-    
-
-
-  }
-
-  addAnimate(){
+  function addAnimate(){
     var cards = document.querySelectorAll('.card');
     cards.forEach((card) => {
       
@@ -61,6 +52,15 @@ export class ProjectsComponent implements OnInit {
   
     });
   }
+    
+    
+    window.addEventListener('load', addAnimate);
+    $(document).ready(addAnimate);
+    
+
+
+  }
+
 
   getProjects(){
     this._projectService.getProjects().subscribe(
