@@ -34,7 +34,7 @@ $(document).ready(function() {
 /*
 $(window).ready(function(){
 
-    var width = $(window).width();
+    var width = $(window).width(); 
     console.log(width);
     if(width<'696'){
         $('.skillName').css('width','110px');
@@ -72,7 +72,7 @@ $(document.body).on('click', 'a[href*="#"]', function(e) {
   });
 */
 
- 
+ /*
 function addAnimate(){
   var cards = document.querySelectorAll('.card');
   cards.forEach((card) => {
@@ -86,13 +86,13 @@ function addAnimate(){
       $(this).find('.card_layer').removeClass('enter-right');
       $(this).find('.card_layer').addClass('leave-right');
     });
-    console.log(card);
+    //console.log($('.card').mouseenter());
 
   });
 }
 
 window.addEventListener('load', addAnimate);
 
-
+*/
 
 });  

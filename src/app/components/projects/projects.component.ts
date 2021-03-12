@@ -26,16 +26,40 @@ export class ProjectsComponent implements OnInit {
       this.url = Global.url;
     }
 
-  ngOnInit(){
+  ngOnInit():void{
     this.getProjects();
 
 
     
-   
+    
+    
+    window.addEventListener('load', this.addAnimate);
     
     
 
 
+  }
+
+  addAnimate(){
+    var cards = document.querySelectorAll('.card');
+    cards.forEach((card) => {
+      
+    
+      $('.card').mouseenter(function(){
+        $(this).find('.card_layer').removeClass('leave-right', 'enter-right');
+        $(this).find('.card_layer').addClass('enter-right');
+        $(this).find('.imgzoom').css('transform', 'scale(1.5)');
+        $(this).find('.imgzoom').css('transition', 'all 1s');
+      });
+      $('.card').mouseleave(function(){
+        $(this).find('.card_layer').removeClass('enter-right', 'leave-right');
+        $(this).find('.card_layer').addClass('leave-right');
+        $(this).find('.imgzoom').css('transform', 'scale(1)');
+        $(this).find('.imgzoom').css('transition', 'all 1s');
+      });
+     
+  
+    });
   }
 
   getProjects(){
