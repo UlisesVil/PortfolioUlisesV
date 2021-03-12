@@ -5,6 +5,7 @@ import { Global } from '../../services/global';
 
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectDialogComponent } from '../../components/project-dialog/project-dialog.component';
+declare var $:any;
 
 @Component({
   selector: 'app-projects',
@@ -28,7 +29,13 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(){
     this.getProjects();
 
+
     
+   
+    
+    
+
+
   }
 
   getProjects(){

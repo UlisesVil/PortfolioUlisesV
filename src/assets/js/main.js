@@ -7,6 +7,8 @@ $(document).ready(function() {
         $('mat-toolbar').removeAttr('style','background:red;');
         console.log('checa otra cosa');
     });
+
+
   /*  $(".linkNav").click(function(){
         $('#transparentWall').removeAttr('style','background:black; width: 100%; height: 100vh; ');
         $('mat-toolbar').removeAttr('style','background:black; display:none');
@@ -69,6 +71,27 @@ $(document.body).on('click', 'a[href*="#"]', function(e) {
     }
   });
 */
+
+ 
+function addAnimate(){
+  var cards = document.querySelectorAll('.card');
+  cards.forEach((card) => {
+    
+  
+    $('.card').mouseenter(function(){
+      $(this).find('.card_layer').removeClass('leave-right');
+      $(this).find('.card_layer').addClass('enter-right');
+    });
+    $('.card').mouseleave(function(){
+      $(this).find('.card_layer').removeClass('enter-right');
+      $(this).find('.card_layer').addClass('leave-right');
+    });
+    console.log(card);
+
+  });
+}
+
+window.addEventListener('load', addAnimate);
 
 
 

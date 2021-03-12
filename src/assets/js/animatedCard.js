@@ -1,11 +1,15 @@
-$(document).ready(function() {
-
+window.addEventListener('load', (event) => {
+    //$(document).ready(function() {
+    console.log('este es el animated card 2');
 
     class AnimatedCard{   
+
         
+       
         constructor(config){
             this.cards=document.querySelectorAll('.' + config.cards);
             console.log(this.cards);
+            //console.log('el constructor');
             this.config = config;
             this.addListeners();
             
@@ -14,14 +18,16 @@ $(document).ready(function() {
         addListeners(){
             this.cards.forEach((card)=>{
                 card.addEventListener('mouseenter',(e)=>{
-                    console.log('entro');
+                    //console.log('entro');
                     this.runAnimation(e.target, e);
                     this.zoomInAnimation(e.target);
+                    //var accion= 'enter';
                 });
                 card.addEventListener('mouseleave',(e)=>{
-                    console.log('salio');
+                    //console.log('salio');
                     this.runAnimation(e.target, e);
                     this.zoomOutAnimation(e.target);
+                    //var accion= 'leave';
                 });
             });
         }
@@ -37,15 +43,15 @@ $(document).ready(function() {
         }
 
         runAnimation(element, event){
-            console.log(element);
+            //console.log(element);
            let isCard = element.classList.contains(this.config.cards);
-           console.log(isCard);
+           //console.log(isCard);
            if(isCard){
                 let cardLayer = element.querySelector(this.config.layer);
                 //let imgzoom = element.querySelector(this.config.imgzoom);
                 //console.log(imgzoom);
                 let side = this.findSide(element, event.x, event.y);
-                console.log(side);
+                //console.log(side);
                 let className='';
 
                 switch(side){
@@ -62,6 +68,7 @@ $(document).ready(function() {
                         className = this.getPrefix() + this.config.suffixes.right;
                     break;
                 };
+                console.log(this.getPrefix());
 
                 this.config.animations.forEach((className)=>{
                     cardLayer.classList.remove(className);
@@ -73,9 +80,7 @@ $(document).ready(function() {
            }
         }
 
-        getPrefix(){
-            return event.type === 'mouseenter'?'enter':'leave';
-        }
+        
 
 
         findSide(card, cursorX, cursorY){
@@ -111,8 +116,25 @@ $(document).ready(function() {
                     return 'right';
             }
         }
-    }
 
+        getPrefix(){
+            this.cards.forEach((card)=>{
+                card.addEventListener('mouseenter',(e)=>{
+                    console.log(e.type);
+                    return 'enter';
+                });
+
+                
+            });
+            //function enterLeave(){
+                
+            //};
+            //console.log( card.addEventListener('mouseenter'));
+           // return event.type === 'mouseenter'?'enter':'leave';
+        }
+        
+    }
+    
     new AnimatedCard({
         cards: 'card',
         layer: '.card_layer',
@@ -126,5 +148,7 @@ $(document).ready(function() {
             right: '-right'
         }
     });
+
+    
 
 });  

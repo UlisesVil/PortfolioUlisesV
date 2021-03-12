@@ -63,9 +63,35 @@
     }
 }*/
 
+.enter-right{
+    animation-name: enterRight;
+}
+.leave-right{
+    animation-name: leaveRight;
+}
+@keyframes enterRight{
+    from{
+        top: 0;
+        left: 100%;
+    }
+    to{
+        top: 0;
+        left: 0;
+    }
+}
 
+@keyframes leaveRight{
+    from{
+        top: 0;
+        left: 0;
+    }
+    to{
+        top: 0;
+        left: 100%;
+    }
+}
 
-
+/*
 .enter-top{
     animation-name: enterTop;
 }
@@ -75,25 +101,24 @@
 .enter-left{
     animation-name: enterLeft;
 }
-.enter-right{
-    animation-name: enterRight;
-}
+*/
 
 
+/*
 .leave-top{
     animation-name: leaveTop;
 }
 .leave-bottom{
     animation-name: leaveBottom;
 }
+
 .leave-left{
     animation-name: leaveLeft;
 }
-.leave-right{
-    animation-name: leaveRight;
-}
+*/
 
 
+/*
 @keyframes enterTop{
     from{
         top: -100%;
@@ -159,25 +184,5 @@
         left: -100%;
     }
 }
+*/
 
-@keyframes enterRight{
-    from{
-        top: 0;
-        left: 100%;
-    }
-    to{
-        top: 0;
-        left: 0;
-    }
-}
-
-@keyframes leaveRight{
-    from{
-        top: 0;
-        left: 0;
-    }
-    to{
-        top: 0;
-        left: 100%;
-    }
-}
