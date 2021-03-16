@@ -72,11 +72,10 @@ $(document.body).on('click', 'a[href*="#"]', function(e) {
   });
 */
 
- /*
+ 
 function addAnimate(){
   var cards = document.querySelectorAll('.card');
   cards.forEach((card) => {
-    
   
     $('.card').mouseenter(function(){
       $(this).find('.card_layer').removeClass('leave-right');
@@ -93,6 +92,6 @@ function addAnimate(){
 
 window.addEventListener('load', addAnimate);
 
-*/
+
 
 });  
