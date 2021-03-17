@@ -1,7 +1,9 @@
 <div mat-dialog-content>
-    <img src="{{data.img}}" alt="">
+    <img src="{{data.certImg}}" alt="">
 </div>
-	<div mat-dialog-actions>
-    		<button mat-button (click)="onClickNo()">Close</button>
-	        <!--<button mat-button [mat-dialog-close]="true">Si</button>-->
-	</div>
+
+<div mat-dialog-actions>
+		<button mat-button (click)="onClickNo()">Close</button>
+		<p>Visit the Official site to Verify the certification <a href="{{data.certLink}}" target="_blank">here</a></p>
+
+</div>

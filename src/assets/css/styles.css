@@ -33,6 +33,34 @@ body{
 }
 
 
+::-webkit-scrollbar-corner {
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background: #2c2b2b;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #990202;
+    border-radius: 20px;
+    width: 10px;
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: red;
+    border-radius: 20px;
+    width: 10px;
+  }
+
+
 /*Barra de Navegacion / Cabecera */
 
 header{
@@ -293,8 +321,12 @@ form input[disabled]{
     margin-left: -5px;
 }
 
-     
-                 
+ 
+.mat-dialog-content{
+    max-height: 75vh !important;
+}  
+
+
 
 
 

@@ -2,42 +2,21 @@
     
     <h2>Projects</h2>
 
-    
     <ul class="projectsCont">
-
-         <!--<div class="newCard"></div> -->
-       
         <li  class="project" *ngFor='let element of elements'>
-           
-               
-                <div class="card">
-                    <img class="imgzoom" src="assets/img/projects/{{element.image}}"/>
-
-                    <div class="card_layer">
-                        <h3 class="card_title"> <a (click)="openDialog(element)" ><i class="fas fa-clipboard-list"></i> Detail</a></h3>
-                        <h3 class="card_title"><a title='GitHub Repo'  href="{{element.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></h3>
-                        <h3 class="card_title"><a title='Website' href="{{element.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></h3>
-                        
-                    </div>
-
-
+            <div class="card">
+                <img class="imgzoom" src="assets/img/projects/{{element.image}}"/>
+                <div class="card_layer">
+                    <h3 class="card_title"> <a (click)="openDialog(element)" ><i class="fas fa-clipboard-list"></i> Detail</a></h3>
+                    <h3 class="card_title"><a title='GitHub Repo'  href="{{element.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></h3>
+                    <h3 class="card_title"><a title='Website' href="{{element.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></h3>
                 </div>
-                <h3>{{element.name}}</h3>
-                <p>{{element.category}}</p>
-            
+            </div>
+            <h3>{{element.name}}</h3>
+            <p>{{element.category}}</p>
         </li>
-       
     </ul>
-
-
-    
-
     
 </div>
-
-<!--[routerLink]="['/proyecto', project._id]"-->
-
-<!--<i class="fas fa-link"></i>-->
-<!--<i class="far fa-hand-pointer"></i>-->
 
 

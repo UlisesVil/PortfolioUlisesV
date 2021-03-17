@@ -1,26 +1,44 @@
 .title{
 text-align: center;
+margin-bottom: 5px;
 }
 
 .generalContent{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .listCont{
     width: 300px;
     margin: 20px;
     list-style: symbols();
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.imgProject{
-    width: 800px;
+.imgProject, p{
+    width: 100%;
+    max-width: 600px;
 }
+
+.description{
+    text-align: justify;
+}
+
 
 a{
     text-decoration: none;
+
+}
+
+a:focus{
+    outline: none;
 }
 
 .fa-github-alt, .fa-globe{
     margin-right: 8px;
+}
+
+.fa-github-alt{
+    margin-top: 15px;
 }

@@ -14,7 +14,6 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
-import { SliderComponent } from './components/slider/slider.component';
 import { ResaltadoDirective } from './resaltado.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
@@ -42,7 +41,6 @@ import { CertificationDialogComponent } from './components/certification-dialog/
     ErrorComponent,
     DetailComponent,
     EditComponent,
-    SliderComponent,
     ResaltadoDirective,
     MainNavComponent,
     ProjectDialogComponent,

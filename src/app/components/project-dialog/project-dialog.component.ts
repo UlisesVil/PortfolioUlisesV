@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Global } from '../../services/global';
+declare var $:any;
 
 @Component({
   selector: 'app-project-dialog',
@@ -24,6 +25,16 @@ export class ProjectDialogComponent implements OnInit {
     this.langs= this.data.langs.split(', ');
     console.log(this.langs);
     
+
+    window.addEventListener('load', this.topwindow);
+    $(document).ready(this.topwindow);
+    
+  }
+
+  topwindow(){
+    var dialogTop = document.getElementById('dialogTop');
+    dialogTop.scrollTop =2;
+    console.log(dialogTop.scrollTop);
     
   }
 

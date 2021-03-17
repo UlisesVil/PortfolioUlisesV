@@ -10,7 +10,7 @@ export class CertificationDialogComponent implements OnInit {
 
   constructor(
     public dialogRef: MatDialogRef<CertificationDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: {img: string}
+    @Inject(MAT_DIALOG_DATA) public data: {certImg: string, title: string, certLink: string}
   ) { }
 
   ngOnInit(): void {

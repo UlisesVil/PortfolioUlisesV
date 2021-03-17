@@ -1,5 +1,5 @@
-<div mat-dialog-content class="generalContent">
-    <h1 class="title"><a>{{data.name}}</a></h1>
+<div id="dialogTop" mat-dialog-content class="generalContent">
+    <a href="#"></a><h1 class="title">{{data.name}}</h1>
     
     <h3>This project is Powered by</h3>
     <ul class="listCont">
@@ -11,11 +11,12 @@
 
 
     <img src="assets/img/projects/{{data.image}}" class="imgProject"/>
-    <p>{{data.description}}</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam at quibusdam sint iste, ut voluptate molestias dignissimos natus ratione qui numquam porro perspiciatis debitis veritatis eveniet dolorem fugit illo.{{data.description}}</p>
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam at quibusdam sint iste, ut voluptate molestias dignissimos natus ratione qui numquam porro perspiciatis debitis veritatis eveniet dolorem fugit illo.{{data.description}}</p>
     <p><a href="{{data.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></p>
     <p><a href="{{data.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></p>
 </div>
 <div mat-dialog-actions>
-    <button mat-button (click)="onClickNo()">No</button>
-    <button mat-button [mat-dialog-close]="true">Si</button>
+    <button mat-button (click)="onClickNo()">Close</button>
+    
 </div>

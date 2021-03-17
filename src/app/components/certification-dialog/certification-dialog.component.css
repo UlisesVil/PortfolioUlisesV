@@ -1,3 +1,8 @@
 img{
-    width: 800px;
+    width: 100%;
+    max-width: 900px;
+}
+
+p{
+    margin-left: 10px;
 }
