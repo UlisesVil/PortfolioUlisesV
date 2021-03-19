@@ -20,38 +20,22 @@ export class MainComponent implements OnInit {
     
     $(document.body).on('click', 'a[href*="#"]', function(e) {
       e.preventDefault();
-     
       $('html,body').animate({
         scrollTop: $(this.hash).offset().top
       }, 900);
-    
     });
     
-    $(window).on('scroll', function() {
-      var scrolled = $(window).scrollTop();
+    function mainScroll() {
+      var scrolled = document.documentElement.scrollTop;
       var height = $(window).height();
       if (scrolled < height) {
         $('.full-image').css({
           'top': -scrolled * .5
         });
       }
-    });
-  
-  }
-
-
-
-
-/*
-  $(".subir").click(function(e){
-    e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
+    };
     
-    $("html, body").animate({
-        scrollTop: 0              //El cero representa el primer pixel de la pagina
-    },2000);
-    return false;     //agregamos un tiempo para la animacion
-});
-
-*/
+    window.addEventListener('scroll',mainScroll);
+  }
 
 }

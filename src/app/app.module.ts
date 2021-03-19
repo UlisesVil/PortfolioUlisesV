@@ -1,20 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http'; //para poder hacer las peticioes AJAX
-import { FormsModule } from '@angular/forms'; //Para utilizar el Chui Databinding
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app-routing';
-
-
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SkillSetComponent } from './components/skillSet/skillSet.component';
 import { ExperienceComponent } from './components/experience/experience.component';
-import { ErrorComponent } from './components/error/error.component';
-import { DetailComponent } from './components/detail/detail.component';
-import { EditComponent } from './components/edit/edit.component';
-import { ResaltadoDirective } from './resaltado.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './components/main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -27,8 +21,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ProjectDialogComponent } from './components/project-dialog/project-dialog.component';
 import { CertificationDialogComponent } from './components/certification-dialog/certification-dialog.component';
-//import * as $ from 'jquery';
-
 
 
 @NgModule({
@@ -38,10 +30,6 @@ import { CertificationDialogComponent } from './components/certification-dialog/
     ProjectsComponent,
     SkillSetComponent,
     ExperienceComponent,
-    ErrorComponent,
-    DetailComponent,
-    EditComponent,
-    ResaltadoDirective,
     MainNavComponent,
     ProjectDialogComponent,
     CertificationDialogComponent

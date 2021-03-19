@@ -22,20 +22,26 @@ export class MainNavComponent {
     private breakpointObserver: BreakpointObserver
   ) {}
 
-
-
-
-  transparentWallOff(){
-    $('#transparentWall').attr('style','background:red; width: 100%; height: 100vh;');
-    $('mat-toolbar').attr('style','background:red;');
-    console.log('me llega');
-    
+  ngOnInit(): void {
+    function removeWall(){
+      $(".mat-drawer-backdrop").click(function(){
+        $('#transparentWall').removeAttr('style','width: 100%; height: 100vh; ');
+        $('mat-toolbar').removeAttr('style','background:red !important;');
+        $('mat-toolbar').attr('style','background:rgba(0, 0, 0, 0.438) !important; height: 50px;');
+      });
+    }
+    window.addEventListener('click',removeWall);
   }
 
+  menuOn(){
+    $('#transparentWall').attr('style','background:rgba(0, 0, 0, 0.02); width: 100%; height: 100vh;');
+    $('mat-toolbar').attr('style','background:red; height: 50px;');
+  }
 
-  attrRemove(){
-    $('#transparentWall').removeAttr('style','background:red; width: 100%; height: 100vh; ');
-    $('mat-toolbar').removeAttr('style','background:red; display:none');    
+  menuOff(){
+    $('#transparentWall').removeAttr('style','width: 100%; height: 100vh; ');
+    $('mat-toolbar').removeAttr('style','display:none');  
+    $('mat-toolbar').attr('style','background:rgba(0, 0, 0, 0.438) !important; height: 50px;');  
   }
 
 }

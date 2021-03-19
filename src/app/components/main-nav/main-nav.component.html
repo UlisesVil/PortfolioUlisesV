@@ -3,14 +3,15 @@
     fixedInViewport
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
-    [opened]="(isHandset$ | async) === false">
+    [opened]="(isHandset$ | async) === false"
+    >
     <mat-toolbar>
       <button
         id="buttonNav2"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle();attrRemove()"
+        (click)="drawer.toggle();menuOff()"
         *ngIf="isHandset$ | async"
         >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
@@ -19,13 +20,14 @@
 
     <mat-nav-list>
       <ul class="ulNav">
-        <li class="liNav" (click)="drawer.toggle();attrRemove()"><a class="linkNav" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust">Web Developer</span></a></li>
-        <li class="liNav" (click)="drawer.toggle();attrRemove()"><a class="linkNav" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
-        <li class="liNav" (click)="drawer.toggle();attrRemove()"><a class="linkNav" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
-        <li class="liNav" (click)="drawer.toggle();attrRemove()"><a class="linkNav" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust">Web Developer</span></a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
       </ul>
     </mat-nav-list>
   </mat-sidenav>
+
   <mat-sidenav-content>
     <mat-toolbar color="primary">
       <button
@@ -33,7 +35,7 @@
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
-        (click)="drawer.toggle(); transparentWallOff()"
+        (click)="drawer.toggle(); menuOn()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
@@ -46,18 +48,7 @@
           <li class="liToollbar"><a class="linkToolbar" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
        </div>
       </ul>
-      
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-
- <!---->
-
-  <!--[routerLink]="['/contacto']"-->
-<!--[routerLink]="['/crear-proyecto']"-->
-<!--[routerLink]="['/main']"-->
-<!--[routerLink]="['/proyectos']"-->
-
-

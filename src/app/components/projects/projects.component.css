@@ -1,69 +1,93 @@
-
-.project .card{
+.card{
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 
 .project img{
     display: block;
     width: 100%;
     box-sizing: border-box;
-    /*border: 1px solid red;*/
     border-radius: 10px;
-    /*border-radius: 10px;*/
+}
 
+.fa-clipboard-list{
+    margin-left: 3px;
 }
 
 .fa-clipboard-list,
 .fa-github-alt,
 .fa-globe{
     margin-right: 8px;
+
 }
+
+
 
 .card_layer{
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 100%;
+    top: 157%;
     left: 0;
-    background: linear-gradient(138deg, rgba(254,1,1,0.6713060224089635) 25%, rgba(236,252,2,0.48363095238095233) 100%);
-    border-radius: 10px;
-
+    justify-content: center;
+    align-content: center;
+    /*border-radius: 10px;*/
     animation-duration: .3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-
+    transform: skewY(30deg);
 }
 
-.card_title, .card_description{
+.colorOne{
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(0, 174, 255) 100%);
+}
+.colorTwo{
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 0, 0) 100%);
+}
+.colorThree{
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(30, 255, 0) 100%);
+}
+.colorFour{
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(4, 0, 255) 100%);
+}
+.colorFive{
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(238, 255, 0) 100%);
+}
+.colorSix{
+    /*background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(0, 204, 255) 100%);*/
+    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 115, 0) 100%);
+}
+
+
+.card_title, 
+.card_description{
     display: block;
     width: 100%;
     text-align: left;
-    margin-left: 20%;
+    text-shadow: 5px 5px 3px black;
+    /*margin-left: 20%;*/
+    transform: skewY(-30deg);
 }
 
-.zoomIn{
-    transition: 1.5s ease;
-    /*transform : scale(1.5);
-    animation-name: zoomIn;*/
+.linksCont{
+    margin-top: -50px;
+    margin-left: -50px;
 }
-/*
-@keyframes zoomIn{
-    from{
-        width: 100%;
-    }
-    to{
-        width: 150%;
-    }
-}*/
-
-
+.detail{
+    margin-left: 10%;
+}
+.site{
+    margin-top: -10px;
+    margin-left: 30%;
+}
+.git{
+    margin-top: -10px;
+    margin-left: 50%;
+}
 
 
 .enter-top{
@@ -78,7 +102,6 @@
 .enter-right{
     animation-name: enterRight;
 }
-
 
 .leave-top{
     animation-name: leaveTop;
@@ -96,7 +119,7 @@
 
 @keyframes enterTop{
     from{
-        top: -100%;
+        top: -157%;
         left: 0;
     }
     to{
@@ -111,14 +134,14 @@
         left: 0;
     }
     to{
-        top: -100%;
+        top: -157%;
         left: 0;
     }
 }
 
 @keyframes enterBottom{
     from{
-        top: 100%;
+        top: 157%;
         left: 0;
     }
     to{
@@ -133,7 +156,7 @@
         left: 0;
     }
     to{
-        top: 100%;
+        top: 157%;
         left: 0;
     }
 }
@@ -141,7 +164,7 @@
 @keyframes enterLeft{
     from{
         top: 0;
-        left: -100%;
+        left: -157%;
     }
     to{
         top: 0;
@@ -156,14 +179,14 @@
     }
     to{
         top: 0;
-        left: -100%;
+        left: -157%;
     }
 }
 
 @keyframes enterRight{
     from{
         top: 0;
-        left: 100%;
+        left: 157%;
     }
     to{
         top: 0;
@@ -178,6 +201,6 @@
     }
     to{
         top: 0;
-        left: 100%;
+        left: 157%;
     }
 }

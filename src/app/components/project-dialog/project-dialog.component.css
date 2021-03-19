@@ -1,17 +1,12 @@
 .title{
-text-align: center;
-margin-bottom: 5px;
-}
-
-.generalContent{
-    /*border: 1px solid red;*/
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .listCont{
     width: 300px;
     margin: 20px;
     list-style: symbols();
-    /*border: 1px solid red;*/
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,10 +16,13 @@ margin-bottom: 5px;
     max-width: 600px;
 }
 
+p{
+    margin-top: 10px;
+}
+
 .description{
     text-align: justify;
 }
-
 
 a{
     text-decoration: none;

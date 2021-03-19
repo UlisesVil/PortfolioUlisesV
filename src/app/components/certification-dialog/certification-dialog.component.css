@@ -3,6 +3,12 @@ img{
     max-width: 900px;
 }
 
+.lastElements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 p{
     margin-left: 10px;
 }

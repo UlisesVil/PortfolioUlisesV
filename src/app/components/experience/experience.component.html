@@ -2,18 +2,12 @@
 
     <h1>Certifications</h1>
 
-    <div id="content" >
-        <div *ngFor='let certification of certifications'>
-        <a (click)="openDialogImg(certification)"><img src="{{certification.certImg}}" alt="{{certification.title}}" title="{{certification.title}}"></a>
+    <div id="content">
+        <div class="imgContent" *ngFor='let certification of certifications'>
+            <a (click)="openDialogImg(certification)">
+                <img src="{{certification.certImg}}" alt="{{certification.title}}" title="{{certification.title}}">
+            </a>
         </div>
     </div>
-    
 
 </div>
-
-<!--
-<a (click)="openDialogImg()"><img src="" alt=""></a>
-        <a (click)="openDialogImg()"><img src="" alt=""></a>
-        <a (click)="openDialogImg()"><img src="" alt=""></a>
-        <a (click)="openDialogImg()"><img src="" alt=""></a>
-        -->

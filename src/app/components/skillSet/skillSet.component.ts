@@ -1,38 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../../models/project';
-import { ProjectService } from '../../services/project.service';
-import { UploadService } from '../../services/upload.service';
-import { Global } from '../../services/global';
 declare var $:any; 
 
 @Component({
   selector: 'app-skillSet',
   templateUrl: './skillSet.component.html',
-  styleUrls: ['./skillSet.component.css'],
-  providers: [ProjectService, UploadService]
+  styleUrls: ['./skillSet.component.css']
 })
 export class SkillSetComponent implements OnInit {
 
   public title: string;
-  public project: Project;
-  public save_project;
-  public status: string;
-  public filesToUpload: Array<File>;
+  public elements;
 
 
-  constructor(
-    private _projectService: ProjectService,
-    private _uploadService: UploadService
-  ) {
+  constructor(){
     this.title = "My Projects are powered by:";
-    this.project = new Project('','','','',2021,'','','','');
-
-   }
+  }
 
   ngOnInit(): void {
 
-    $(function(){
-      var elements=[
+   
+       this.elements=[
         {
           name:'JavaScript',
         },
@@ -103,108 +90,129 @@ export class SkillSetComponent implements OnInit {
         },
       ];
 
-      //background-image: url(../../../assets/img/skills/0${index}.png);
-      elements.forEach((item, index)=>{
-        let element = `
-          <div class="element">
-            <div class="skillContainer">
-              <img class="skillImg"
-                src="assets/img/skills/0${index}.png" 
-                title="${item.name}";
-              />
-            </div>
-            <h2 class="skillName" style="text-align:center;">${item.name}</h2>
-          </div>
-        `;
-        $(".post").append(element);
-      });
-    });
 
     
-    function adjustWidth() {
+      window.addEventListener('load', this.coverAnimate);
+      window.addEventListener('load', this.addAnimate);
+    
+  }
+
+
+    
+  coverAnimate(){
+    var cardCover = document.querySelectorAll('.cardCover');
+    console.log(cardCover);
+    cardCover.forEach((card) => {
+    
+      $('.element').mouseenter(function(){
+        $(this).find('.cardCover').removeClass('leave');
+        $(this).find('.cardCover').addClass('enter');
+      });
+      $('.element').mouseleave(function(){
+        $(this).find('.cardCover').removeClass('enter');
+        $(this).find('.cardCover').addClass('leave');
+      });
+    
+
+    });
+  }
+
+
+  addAnimate(){
+    var cards = document.querySelectorAll('.element');
+    console.log(cards);
+    cards.forEach((card) => {
+      $('.element').mouseenter(function(){
+        let randomNumber=Math.floor(Math.random()*Math.floor(6));
+        console.log(randomNumber);
+        switch(randomNumber){
+          case 0: 
+          $(this).find('.cardCover').addClass('colorOne');
+          $(this).find('.cardCover').removeClass('colorTwo');
+          $(this).find('.cardCover').removeClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorFive');
+          $(this).find('.cardCover').removeClass('colorSix');
+          break;
+          case 1: 
+          $(this).find('.cardCover').addClass('colorTwo');
+          $(this).find('.cardCover').removeClass('colorOne');
+          $(this).find('.cardCover').removeClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorFive');
+          $(this).find('.cardCover').removeClass('colorSix');
+          break;
+          case 2: 
+          $(this).find('.cardCover').addClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorOne');
+          $(this).find('.cardCover').removeClass('colorTwo');
+          $(this).find('.cardCover').removeClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorFive');
+          $(this).find('.cardCover').removeClass('colorSix');
+          break;
+          case 3: 
+          $(this).find('.cardCover').addClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorOne');
+          $(this).find('.cardCover').removeClass('colortwo');
+          $(this).find('.cardCover').removeClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorFive');
+          $(this).find('.cardCover').removeClass('colorSix');
+          break;
+          case 4: 
+          $(this).find('.cardCover').addClass('colorFive');
+          $(this).find('.cardCover').removeClass('colorOne');
+          $(this).find('.cardCover').removeClass('colortwo');
+          $(this).find('.cardCover').removeClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorSix');
+          break;
+          case 5: 
+          $(this).find('.cardCover').addClass('colorSix');
+          $(this).find('.cardCover').removeClass('colorOne');
+          $(this).find('.cardCover').removeClass('colortwo');
+          $(this).find('.cardCover').removeClass('colorThree');
+          $(this).find('.cardCover').removeClass('colorFour');
+          $(this).find('.cardCover').removeClass('colorFive');
+          break;
+        }  
+      });
+      $('.element').mouseleave(function(){
+        $(this).find('.cardCover').removeClass('colorOne', 'colorTwo','colorThree', 'colorFour', 'colorFive', 'colorSix');
+      });
+    });
+  }
+}
+
+
+
+
+
+/*
+function adjustWidth() {
       let width= $(window).width();
-      console.log(width);
       if(width>853){
         $('.skillName').css('width','160px');
         $('.skillName').css('font-size','20px');
       }else if(width<=853){
           $('.skillName').css('width','110px');
           $('.skillName').css('font-size','15px');
-          
-      }
+      };
+
       $('.element').mouseover(function(){
         $(this).find('h2').css('display','block');
-        
         let height=$(this).find('.skillContainer').css('width');
-        
-        console.log(height);
         $(this).find('h2').animate({height: height},'fast','swing');
-        
-
       });
     
       $('.element').mouseleave(function(){
-          $(this).find('h2').css('display','none');
-        
-         
-
-          let height=$(this).find('.skillContainer').css('width');
-          let heightStr=(parseInt(height.slice(0,(height.length-2)))*-1)+'px';
-          console.log(heightStr);
-          //console.log(height);
-          $(this).find('h2').animate({height: heightStr},'fast','swing');
-          
+        $(this).find('h2').css('display','none');
+        let height=$(this).find('.skillContainer').css('width');
+        let heightStr=(parseInt(height.slice(0,(height.length-2)))*-1)+'px';
+        $(this).find('h2').animate({height: heightStr},'fast','swing');
       });
-
     }
     window.addEventListener('resize', adjustWidth);
     $(document).ready(adjustWidth);
-    
-  }
-
-  onSubmit(form){
-    
-    //Guardar los datos basicos
-    this._projectService.saveProject(this.project).subscribe(
-      response=>{
-        console.log(response);
-        if(response.project){
-          
-
-          //Subir la imagen
-          if(this.filesToUpload){
-            this._uploadService.makeFileRequest(Global.url+"upload-image/"+response.project._id, [], this.filesToUpload, 'image')
-            .then((result:any)=>{
-                this.save_project= result.project;
-                this.status = 'success';
-                form.reset();
-          });
-
-          
-        }else{
-          this.save_project= response.project;
-          this.status = 'success';
-          form.reset();
-        }
-
-          
-        }else{
-          this.status = 'failed';
-        }
-      },
-      error=> {
-        console.log(<any>error); 
-      }
-    );
-    
-  }
-
-  fileChangeEvent(fileInput: any){
-    this.filesToUpload= <Array<File>>fileInput.target.files;
-  }
-
-  
 
 
-
-}
+*/

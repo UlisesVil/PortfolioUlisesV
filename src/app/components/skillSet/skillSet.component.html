@@ -1,10 +1,24 @@
-<div id="skillSet" *ngIf="project">
+<div id="skillSet">
 
     <div class="detailcont">
         <h2>{{title}}</h2>
 
-        <div class="skillCont">
-            <div class="post"></div>
+        <div class="cardCont">
+            <div class="post" *ngFor='let element of elements; index as i'>
+                
+                <div class="element">
+                    <div class="skillContainer">
+                        <img class="skillImg" src="assets/img/skills/0{{i}}.png"/>
+                        
+                        <div class="cardCover">
+                            <h2>{{element.name}}</h2>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
         </div>
     </div>
 

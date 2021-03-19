@@ -1,4 +1,3 @@
-
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CertificationDialogComponent } from '../../components/certification-dialog/certification-dialog.component';
@@ -10,14 +9,11 @@ declare var $:any;
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-public certifications;
+  public certifications;
  
-
   constructor(
     public dialog: MatDialog
   ) { }
-
-
 
   ngOnInit() {
    
@@ -52,12 +48,11 @@ public certifications;
         title:'Responsive Web Design Certification',
         certLink: 'https://www.freecodecamp.org/certification/fcc8cfd608b-0982-46f9-99c8-80ea90a04a32/responsive-web-design'
       }
-    ]
-    
+    ];
   }
 
   openDialogImg(certification): void{
-    console.log(certification);
+    //console.log(certification);
     
     const dialogRef = this.dialog.open(CertificationDialogComponent,{
       data: {
@@ -66,6 +61,7 @@ public certifications;
         certLink: certification.certLink,
       }
     });
+
     dialogRef.afterClosed().subscribe(res =>{
       console.log(res);
       if(res){
@@ -75,5 +71,4 @@ public certifications;
     });
   }
   
-
 }
