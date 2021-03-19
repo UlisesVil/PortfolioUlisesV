@@ -2,12 +2,13 @@
 $(document).ready(function() {
 
     //Nav-Bar
+    /*
     $(".mat-drawer-backdrop").click(function(){
-        $('#transparentWall').removeAttr('style','background:red; width: 100%; height: 100vh; ');
-        $('mat-toolbar').removeAttr('style','background:red;');
-        console.log('checa otra cosa');
+        $('#transparentWall').removeAttr('style','width: 100%; height: 100vh; ');
+        $('mat-toolbar').removeAttr('style','background:red !important;');
+        $('mat-toolbar').attr('style','background:rgba(0, 0, 0, 0.438) !important; height: 50px;');
     });
-
+*/
 
   /*  $(".linkNav").click(function(){
         $('#transparentWall').removeAttr('style','background:black; width: 100%; height: 100vh; ');
@@ -72,7 +73,7 @@ $(document.body).on('click', 'a[href*="#"]', function(e) {
   });
 */
 
- 
+ /*
 function addAnimate(){
   var cards = document.querySelectorAll('.card');
   cards.forEach((card) => {
@@ -91,7 +92,7 @@ function addAnimate(){
 }
 
 window.addEventListener('load', addAnimate);
-
+*/
 
 
 });  
