@@ -1,14 +1,51 @@
-/*
-Este nuevo css debe cargarse en angular.json en styles "src/assets/styles.css"
-*/
-@font-face{
-    font-family: "yanone";
-    src: url("fonts/yanone.ttf");
-}
 
 @font-face{
-    font-family: "finger";
-    src: url("fonts/finger.ttf");
+    font-family: "Alegreya";
+    src: url("fonts/Alegreya-Regular.ttf");
+}
+@font-face{
+    font-family: "Arapey";
+    src: url("fonts/Arapey-Regular.ttf");
+}
+@font-face{
+    font-family: "BadScript";
+    src: url("fonts/BadScript-Regular.ttf");
+}
+@font-face{
+    font-family: "JustAnotherHand";
+    src: url("fonts/JustAnotherHand-Regular.ttf");
+}
+@font-face{
+    font-family: "K2D";
+    src: url("fonts/K2D-Regular.ttf");
+}
+@font-face{
+    font-family: "Katibeh";
+    src: url("fonts/Katibeh-Regular.ttf");
+}
+@font-face{
+    font-family: "Podkova";
+    src: url("fonts/Podkova-VariableFont_wght.ttf");
+}
+@font-face{
+    font-family: "Quattrocento";
+    src: url("fonts/Quattrocento-Regular.ttf");
+}
+@font-face{
+    font-family: "TenaliRamakrishna";
+    src: url("fonts/TenaliRamakrishna-Regular.ttf");
+}
+@font-face{
+    font-family: "Bilbo";
+    src: url("fonts/Bilbo-Regular.ttf");
+}
+@font-face{
+    font-family: "CormorantUpright";
+    src: url("fonts/CormorantUpright-Regular.ttf");
+}
+@font-face{
+    font-family: "Romanesco";
+    src: url("fonts/Romanesco-Regular.ttf");
 }
 
 
@@ -32,33 +69,37 @@ body{
     clear: both;
 }
 
+.sectionTitle{
+    text-align: center;
+}
+
 
 ::-webkit-scrollbar-corner {
     border-radius: 2px;
     cursor: pointer;
-  }
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    border-radius: 20px;
-    background: #2c2b2b;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #990202;
-    border-radius: 20px;
-    width: 10px;
-    cursor: pointer;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: red;
-    border-radius: 20px;
-    width: 10px;
-  }
+}
+
+::-webkit-scrollbar {
+width: 10px;
+}
+
+::-webkit-scrollbar-track {
+border-radius: 20px;
+background: #2c2b2b;
+}
+
+::-webkit-scrollbar-thumb {
+background: #990202;
+border-radius: 20px;
+width: 10px;
+cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: red;
+border-radius: 20px;
+width: 10px;
+}
 
 
 /*Barra de Navegacion / Cabecera */
@@ -240,6 +281,7 @@ form input[disabled]{
     background: rgb(24, 24, 24, 1);
     color: white;
     /*border: 1px solid red;*/
+    text-align: center;
 }
 
 .projectsCont{
@@ -285,6 +327,13 @@ form input[disabled]{
 
 
 
+#mat-dialog-0, #cdk-overlay-1, #mat-dialog-1{
+   background: rgb(24,24,24,1);
+}
+  
+  #mat-dialog-0, .mat-dialog-container{
+   background: rgb(24,24,24,1);
+}
 
 
 #content{
@@ -303,4 +352,19 @@ form input[disabled]{
 }
 
 
+@media screen and (max-width: 600px){
+    #portfolioContent,
+    #skillSet,
+    #experience{
+    
+        padding-top: 80px;
+        
+    }
+
+    .projectsCont{
+        padding-top: 30px;
+    }
+
+    
+}
 
