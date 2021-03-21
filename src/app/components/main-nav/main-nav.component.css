@@ -7,7 +7,7 @@ mat-icon{
 }
 
 .sidenav {
-  width: 60%;
+  width: fit-content;
   background-color: rgb(0, 0, 0);
 }
 
@@ -31,31 +31,34 @@ mat-icon{
   justify-content: left;
   margin: 0px auto;
   margin-top: -3px;
+  
 }
 
 .liNav{
   display: inline-block;
   line-height: 40px;
+ 
 }
 
 .linkNav{
   display: inline-block;
   height: inherit;
   padding-right: 20px;
-  padding-left: 20px;
-  font-size: 15px;
-  font-family: bangers;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: Bilbo;
   letter-spacing: 2px;
   text-decoration: none;
   color: white;
   transition: all 800ms;
   cursor: pointer;
+
 }
 
 .linkNav:hover,
+.linkToolbar:hover,
 .actived{      
-  background: rgba(70, 0, 0, 0.8);
-  border-radius: 30px;
+  color: yellowgreen;
 }
 
 .ulToolbar{
@@ -72,9 +75,8 @@ mat-icon{
 .liToollbar{
   display: inline-block;
   text-align: center;
-  line-height: 50px;
-  font-family: bangers;
-  letter-spacing: 2px;
+  font-family: Bilbo;
+  letter-spacing: 3px;
 }
 
 .linkToolbar{
@@ -83,20 +85,17 @@ mat-icon{
   padding-right: 20px;
   padding-left: 20px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   transition: all 800ms;
   cursor: pointer;
-}
-
-.linkToolbar:hover,
-.actived{      
-  background: rgba(70, 0, 0, 0.8);
-  border-radius: 30px;
+  padding-top: 3px;
+  
 }
 
 .fontadjust{
-  font-size: 13px;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 800px){

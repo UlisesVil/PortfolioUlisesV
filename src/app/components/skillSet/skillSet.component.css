@@ -16,7 +16,10 @@
    
 }
 
-
+h2{
+    font-family: CormorantUpright;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+}
 
 .post{
     display: block;
@@ -177,6 +180,12 @@
     }
 }
 
+
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 20px;
+    }
+}
 
 
 

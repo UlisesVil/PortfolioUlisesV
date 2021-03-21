@@ -8,7 +8,9 @@
   /*padding-top: 50px;*/
   background: black;
   color: white;
+  text-shadow: 5px 5px 5px black;
   /*border: 1px solid red;*/
+  
 }
 
 a,
@@ -36,17 +38,21 @@ h3 {
   justify-content: center;
   overflow: hidden;
   background: rgb(24, 24, 24, 1);
+  
 }
 
 h1{
   position: relative;
   font-size: 5rem;
+  font-family: Bilbo;
   line-height: 1.2;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   margin: 0px auto;
   align-self: center;
   /*border: 1px solid red;*/
   z-index: 1;
+  text-shadow: 5px 5px 5px rgb(155, 154, 154);
+  color: yellowgreen;
 }
 
 h2{
@@ -58,15 +64,21 @@ h2{
   z-index: 1;
   padding-top: 20px;
   font-size: 2rem;
+  font-family: Bilbo;
+  letter-spacing: 3px;
+  text-shadow: 5px 5px 5px rgb(155, 154, 154);
+  color: yellowgreen;
 }
 
 .down-arr {
+  color: yellowgreen;
   position: relative;
   font-size: 2rem;
   padding: 0 20px 20px 20px;
-  top:100px;
+  bottom: -126px;
   font-size: 50px;
   z-index: 1;
+  text-shadow: 5px 5px 5px rgb(155, 154, 154);
 }
 
 .full-image {
@@ -78,6 +90,7 @@ h2{
   position: absolute;
   top: 0;
   width: auto;
+  
 }
 
 

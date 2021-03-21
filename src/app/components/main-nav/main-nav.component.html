@@ -20,10 +20,11 @@
 
     <mat-nav-list>
       <ul class="ulNav">
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust">Web Developer</span></a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust"> - Web Developer</span></a></li>
         <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
         <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
         <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="mailto:ulisesvil5@hotmail.com" title="Send me an email" [routerLinkActive]="['actived']">Contact</a></li>
       </ul>
     </mat-nav-list>
   </mat-sidenav>
@@ -41,11 +42,12 @@
       </button>
 
       <ul class="ulToolbar">
-        <li id="itemsLeft" class="liToollbar"><a class="linkToolbar" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa <span class="fontadjust">Web Developer</span></a></li>
+        <li id="itemsLeft" class="liToollbar"><a class="linkToolbar" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa <span class="fontadjust"> - Web Developer</span></a></li>
         <div class="itemsRight">
           <li class="liToollbar"><a class="linkToolbar" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
           <li class="liToollbar"><a class="linkToolbar" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
           <li class="liToollbar"><a class="linkToolbar" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
+          <li class="liToollbar"><a class="linkToolbar" href="mailto:ulisesvil5@hotmail.com" title="Send me an email" [routerLinkActive]="['actived']">Contact</a></li>
        </div>
       </ul>
     </mat-toolbar>

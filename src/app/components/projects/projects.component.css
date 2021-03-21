@@ -5,6 +5,24 @@
     /*border-radius: 10px;*/
 }
 
+h2{
+    font-family: CormorantUpright;
+    text-shadow: 3px 3px 5px white;
+}
+
+h3, p{
+    font-family: Arapey;
+    text-shadow: 3px 3px 5px white;
+    /*font-family: Katibeh;*/
+    /*font-family: TenaliRamakrishna;*/
+}
+
+h3{
+    margin-top: 5px;
+}
+
+
+
 .project img{
     display: block;
     width: 100%;
@@ -20,7 +38,12 @@
 .fa-github-alt,
 .fa-globe{
     margin-right: 8px;
+    color: white;
 
+}
+
+a{
+    cursor: pointer;
 }
 
 
@@ -40,6 +63,8 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transform: skewY(30deg);
+    font-family: CormorantUpright;
+    
 }
 
 .colorOne{
@@ -71,6 +96,8 @@
     text-shadow: 5px 5px 3px black;
     /*margin-left: 20%;*/
     transform: skewY(-30deg);
+    font-family: CormorantUpright;
+    font-size: 20px;
 }
 
 .linksCont{
@@ -202,5 +229,24 @@
     to{
         top: 0;
         left: 157%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 20px;
+    }
+    .card_title{
+        font-size: 15px;
+    }
+
+    .linksCont{
+        margin-top: -30px;
+    }
+    .projectTitle{
+        font-size: 17px;
+    }
+    .projectSub{
+        font-size: 15px;
     }
 }

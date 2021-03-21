@@ -31,7 +31,7 @@ export class ProjectsComponent implements OnInit {
         "site" : "https://ulisesvil.github.io/TopRacingGames"
       },
       {
-        "name" : "API Rest Top Racin Games Site",
+        "name" : "API Rest Top Racing Games Site",
         "description" : "API to the page Top Racing Games",
         "category" : "API REST",
         "year" : 2020,
