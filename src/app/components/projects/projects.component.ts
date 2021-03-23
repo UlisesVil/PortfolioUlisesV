@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
         "langs" : "NodeJS, MongoDB Atlas, ExpressJS, Heroku, JSON Web Token",
         "image" : "02.jpg",
         "git" : "https://github.com/UlisesVil/TopRacingGames-API",
-        "site" : "https://backend-mean-stack.herokuapp.com"
+        "site" : "https://top-racing-games-api.herokuapp.com"
       },
       {
         "name" : "1up-Games News",
