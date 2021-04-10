@@ -21,9 +21,9 @@ export class ProjectsComponent implements OnInit {
 
     this.elements=[
       {
-        "name" : "Top Racing Games",
+        "name" : "Top Racing Games Site",
         "description" : "Web Page with Backend and Data Base",
-        "category" : "Web Page",
+        "category" : "Angular",
         "year" : 2020,
         "langs" : "Angular, JavaScript, TypeScript, NodeJS, MongoDB Atlas, ExpressJS, jQuery, Css3, Heroku, JSON Web Token, Box Slider Library",
         "image" : "01.jpg",
@@ -33,7 +33,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "API Rest Top Racing Games Site",
         "description" : "API to the page Top Racing Games",
-        "category" : "API REST",
+        "category" : "Node JS",
         "year" : 2020,
         "langs" : "NodeJS, MongoDB Atlas, ExpressJS, Heroku, JSON Web Token",
         "image" : "02.jpg",
@@ -41,9 +41,39 @@ export class ProjectsComponent implements OnInit {
         "site" : "https://top-racing-games-api.herokuapp.com"
       },
       {
+        "name" : "Pic N Share",
+        "description" : "Social App",
+        "category" : "Laravel",
+        "year" : 2020,
+        "langs" : "Laravel, PHP, My SQL, jQuery, CSS3, PHP my Admin, Tail Wind Library, Moment JS Library",
+        "image" : "06.jpg",
+        "git" : "https://github.com/UlisesVil/Laravel-SocialApp-PicnShare",
+        "site" : "http://ulises-social-app.atwebpages.com"
+      },
+      {
+        "name" : "Tasks App",
+        "description" : "Task Manager App",
+        "category" : "Symfony",
+        "year" : 2020,
+        "langs" : "Symfony, PHP, My SQL, PHP my Admin, Twig, CSS3",
+        "image" : "08.jpg",
+        "git" : "https://github.com/UlisesVil/Symfony-TasksApp",
+        "site" : "http://ulises-tasksapp.atwebpages.com"
+      },
+      {
+        "name" : "Shop",
+        "description" : "Clothes Men's Shop",
+        "category" : "PHP MVC",
+        "year" : 2020,
+        "langs" : "PHP, My SQL, PHP my Admin, CSS3",
+        "image" : "07.jpg",
+        "git" : "https://github.com/UlisesVil/project-shop-PHP-MySQL-POO-MVC",
+        "site" : "http://ulisestore.atwebpages.com"
+      },
+      {
         "name" : "1up-Games News",
         "description" : "Web Page Games News",
-        "category" : "Web Page",
+        "category" : "PHP",
         "year" : 2020,
         "langs" : "JavaScript, jQuery, PHP, My SQL, CSS3,  PHP my Admin, Particles JS library, Font Awesome library",
         "image" : "03.jpg",
@@ -53,7 +83,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Project JS",
         "description" : "Web Page",
-        "category" : "Web Page",
+        "category" : "JavaScript",
         "year" : 2020,
         "langs" : "JavaScript, jQuery, Moment library, Box Slider Library, CSS3 ",
         "image" : "04.jpg",
@@ -63,7 +93,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Chat App",
         "description" : "Chat App with socket io and node JS",
-        "category" : "App",
+        "category" : "Node JS",
         "year" : 2020,
         "langs" : "NodeJS, Socket.io, Express, CSS3, Heroku",
         "image" : "05.jpg",
@@ -71,39 +101,9 @@ export class ProjectsComponent implements OnInit {
         "site" : "https://ulises-node-chat.herokuapp.com"
       },
       {
-        "name" : "Pic N Share",
-        "description" : "Social App",
-        "category" : "App",
-        "year" : 2020,
-        "langs" : "Laravel, PHP, My SQL, jQuery, CSS3, PHP my Admin, Tail Wind Library, Moment JS Library",
-        "image" : "06.jpg",
-        "git" : "https://github.com/UlisesVil/Laravel-SocialApp-PicnShare",
-        "site" : "http://ulises-social-app.atwebpages.com"
-      },
-      {
-        "name" : "Shop",
-        "description" : "Clothes Men's Shop",
-        "category" : "App",
-        "year" : 2020,
-        "langs" : "PHP, My SQL, PHP my Admin, CSS3",
-        "image" : "07.jpg",
-        "git" : "https://github.com/UlisesVil/project-shop-PHP-MySQL-POO-MVC",
-        "site" : "http://ulisestore.atwebpages.com"
-      },
-      {
-        "name" : "Tasks App",
-        "description" : "Task Manager App",
-        "category" : "App",
-        "year" : 2020,
-        "langs" : "Symfony, PHP, My SQL, PHP my Admin, Twig, CSS3",
-        "image" : "08.jpg",
-        "git" : "https://github.com/UlisesVil/Symfony-TasksApp",
-        "site" : "http://ulises-tasksapp.atwebpages.com"
-      },
-      {
         "name" : "Mark Down Previewer",
         "description" : "React App Mark Down Previewer ",
-        "category" : "App",
+        "category" : "React",
         "year" : 2020,
         "langs" : "React, JavaScript, Sass,  Font Awesome Library, Marked Library",
         "image" : "09.jpg",
@@ -113,7 +113,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Random Quote Machine",
         "description" : "React App Random Quote Machine ",
-        "category" : "App",
+        "category" : "React",
         "year" : 2020,
         "langs" : "React, JavaScript, CSS3",
         "image" : "10.jpg",
@@ -123,7 +123,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Pomodoro Clock",
         "description" : "React App Pomodoro Clock",
-        "category" : "App",
+        "category" : "React",
         "year" : 2020,
         "langs" : "React, JavaScript, Sass, Font Awesome Library",
         "image" : "11.jpg",
@@ -133,7 +133,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Drum Machine",
         "description" : "React App Drum Machine",
-        "category" : "App",
+        "category" : "React",
         "year" : 2020,
         "langs" : "React, JavaScript, Sass",
         "image" : "12.jpg",
@@ -143,7 +143,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "React Calc",
         "description" : "React App Calc with eval method",
-        "category" : "App",
+        "category" : "React",
         "year" : 2020,
         "langs" : "React, JavaScript, Sass",
         "image" : "13.jpg",
@@ -153,7 +153,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "JavaScript  Calc",
         "description" : "Calc with JavaScript No eval Method used",
-        "category" : "App",
+        "category" : "JavaScript",
         "year" : 2020,
         "langs" : "JavaScript, CSS3",
         "image" : "14.jpg",
@@ -163,7 +163,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Etch A Sketch",
         "description" : "App Etch A Sketch",
-        "category" : "App",
+        "category" : "JavaScript",
         "year" : 2020,
         "langs" : "JavaScript, CSS3",
         "image" : "15.jpg",
@@ -173,7 +173,7 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Rock Paper Scissors Game",
         "description" : "Java Script Rock Paper Scissors Game",
-        "category" : "Game",
+        "category" : "JavaScript",
         "year" : 2020,
         "langs" : "JavaScript, CSS3",
         "image" : "16.jpg",
@@ -186,7 +186,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   openDialog(project): void{
-    
+
     const dialogRef = this.dialog.open(ProjectDialogComponent,{
       data: {
         name: project.name,
@@ -202,13 +202,13 @@ export class ProjectsComponent implements OnInit {
 
   addAnimate(){
     var cards = document.querySelectorAll('.card');
-   
+
     cards.forEach((card) => {
       $('.card').mouseenter(function(){
         let randomNumber=Math.floor(Math.random()*Math.floor(6));
         //console.log(randomNumber);
         switch(randomNumber){
-          case 0: 
+          case 0:
           $(this).find('.card_layer').addClass('colorOne');
           $(this).find('.card_layer').removeClass('colorTwo');
           $(this).find('.card_layer').removeClass('colorThree');
@@ -216,7 +216,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFive');
           $(this).find('.card_layer').removeClass('colorSix');
           break;
-          case 1: 
+          case 1:
           $(this).find('.card_layer').addClass('colorTwo');
           $(this).find('.card_layer').removeClass('colorOne');
           $(this).find('.card_layer').removeClass('colorThree');
@@ -224,7 +224,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFive');
           $(this).find('.card_layer').removeClass('colorSix');
           break;
-          case 2: 
+          case 2:
           $(this).find('.card_layer').addClass('colorThree');
           $(this).find('.card_layer').removeClass('colorOne');
           $(this).find('.card_layer').removeClass('colorTwo');
@@ -232,7 +232,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFive');
           $(this).find('.card_layer').removeClass('colorSix');
           break;
-          case 3: 
+          case 3:
           $(this).find('.card_layer').addClass('colorFour');
           $(this).find('.card_layer').removeClass('colorOne');
           $(this).find('.card_layer').removeClass('colortwo');
@@ -240,7 +240,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFive');
           $(this).find('.card_layer').removeClass('colorSix');
           break;
-          case 4: 
+          case 4:
           $(this).find('.card_layer').addClass('colorFive');
           $(this).find('.card_layer').removeClass('colorOne');
           $(this).find('.card_layer').removeClass('colortwo');
@@ -248,7 +248,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFour');
           $(this).find('.card_layer').removeClass('colorSix');
           break;
-          case 5: 
+          case 5:
           $(this).find('.card_layer').addClass('colorSix');
           $(this).find('.card_layer').removeClass('colorOne');
           $(this).find('.card_layer').removeClass('colortwo');
@@ -256,7 +256,7 @@ export class ProjectsComponent implements OnInit {
           $(this).find('.card_layer').removeClass('colorFour');
           $(this).find('.card_layer').removeClass('colorFive');
           break;
-        }  
+        }
       });
       $('.card').mouseleave(function(){
         $(this).find('.card_layer').removeClass('colorOne', 'colorTwo','colorThree', 'colorFour', 'colorFive', 'colorSix');
