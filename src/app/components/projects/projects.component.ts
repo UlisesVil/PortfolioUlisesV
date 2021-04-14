@@ -165,7 +165,7 @@ export class ProjectsComponent implements OnInit {
         "description" : "App Etch A Sketch",
         "category" : "JavaScript",
         "year" : 2020,
-        "langs" : "JavaScript, CSS3",
+        "langs" : "JavaScript, CSS3, jQuery, Font Awesome library, Colorpicker Library",
         "image" : "15.jpg",
         "git" : "https://github.com/UlisesVil/Etch-a-sketch",
         "site" : "https://ulisesvil.github.io/Etch-a-sketch/"
