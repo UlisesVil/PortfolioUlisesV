@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     margin: 50px auto;
     gap: 50px;
-   
+
     /*border: 1px solid red;*/
 }
 
@@ -20,6 +20,7 @@ h2{
    /* overflow: hidden;*/
     border-radius: 10px;
     width: 400px;
+
 }
 
 img{
@@ -27,6 +28,7 @@ img{
     width: 100%;
     border-radius: 10px;
     /*border:1px solid red;*/
+    box-shadow: 3px 3px 15px 5px black;
 }
 
 img:hover{

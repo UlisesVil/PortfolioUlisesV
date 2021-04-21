@@ -93,12 +93,12 @@ export class ProjectsComponent implements OnInit {
       {
         "name" : "Chat App",
         "description" : "Chat App with socket io and node JS",
-        "category" : "Node JS",
+        "category" : "React - Socket io",
         "year" : 2020,
         "langs" : "NodeJS, Socket.io, Express, CSS3, Heroku",
         "image" : "05.jpg",
-        "git" : "https://github.com/UlisesVil/Chat-NodeJS-Socket.io",
-        "site" : "https://ulises-node-chat.herokuapp.com"
+        "git" : "https://github.com/UlisesVil/React-Socket-io-Chat",
+        "site" : "https://ulisesvil.github.io/React-Socket-io-Chat"
       },
       {
         "name" : "Mark Down Previewer",
@@ -165,7 +165,7 @@ export class ProjectsComponent implements OnInit {
         "description" : "App Etch A Sketch",
         "category" : "JavaScript",
         "year" : 2020,
-        "langs" : "JavaScript, CSS3, jQuery, Font Awesome library, Colorpicker Library",
+        "langs" : "JavaScript, CSS3, jQuery, Font Awesome library, Colorpicker Library, html2canvas Library, canvas2image library",
         "image" : "15.jpg",
         "git" : "https://github.com/UlisesVil/Etch-a-sketch",
         "site" : "https://ulisesvil.github.io/Etch-a-sketch/"

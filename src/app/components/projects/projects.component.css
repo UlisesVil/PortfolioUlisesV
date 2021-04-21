@@ -1,8 +1,11 @@
+
+
 .card{
     position: relative;
     width: 100%;
     overflow: hidden;
-    /*border-radius: 10px;*/
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 5px black;
 }
 
 h2{
@@ -64,7 +67,7 @@ a{
     animation-fill-mode: forwards;
     transform: skewY(30deg);
     font-family: CormorantUpright;
-    
+
 }
 
 .colorOne{
@@ -88,7 +91,7 @@ a{
 }
 
 
-.card_title, 
+.card_title,
 .card_description{
     display: block;
     width: 100%;
