@@ -1,0 +1,135 @@
+#contactContainer{
+  /*border: 1px solid yellowgreen;*/
+  padding: 50px;
+  width: 90%;
+  margin: 150px auto 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+.logo{
+  background: white;
+  height: 50px;
+  border-radius: 50em;
+  color: black;
+  /*border: 1px solid rgb(0, 11, 168);*/
+}
+nav{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid yellowgreen;*/
+}
+.ulFooter{
+display: flex;
+flex-direction: row;
+}
+.liFooter{
+  list-style: none;
+  width: 60px;
+  padding: 10px;
+  /*border: 1px solid yellowgreen;*/
+}
+.liTitle{
+  display: flex;
+  align-items: center;
+  text-align: right;
+  list-style: none;
+  width: fit-content;
+  padding: 10px;
+  font-family: CormorantUpright;
+  text-shadow: 3px 3px 5px white;
+  color: white;
+  /*border: 1px solid yellowgreen;*/
+}
+.mail{
+  padding-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+.formContainer{
+  width: 50%;
+  /*border: 1px solid rgb(0, 38, 255);*/
+}
+
+form{
+  width: 100%;
+  /*border: 1px solid yellowgreen;*/
+}
+
+h2{
+  font-family: CormorantUpright;
+  text-shadow: 3px 3px 5px white;
+  color: white;
+}
+
+.form-group{
+  margin-top: 10px;
+  width: 80%;
+  /*border: 1px solid yellow;*/
+}
+
+.form-control,
+.form-text{
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: CormorantUpright;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.form-text{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 730px){
+
+  #contactContainer{
+    padding: 20px;
+
+  }
+  h2{
+    font-size: 20px;
+  }
+
+  #contactContainer{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .formContainer{
+    width: 80%;
+    margin-bottom: 50px;
+
+  }
+}
+
+@media screen and (max-width: 500px){
+  .formContainer{
+    width: 100%;
+
+  }
+  #contactContainer{
+    padding: 10px;
+
+  }
+  .liFooter{
+    list-style: none;
+    width: 40px;
+    padding: 5px;
+    /*border: 1px solid yellowgreen;*/
+  }
+}

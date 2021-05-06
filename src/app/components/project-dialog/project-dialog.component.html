@@ -1,6 +1,6 @@
 <div id="dialogTop" mat-dialog-content class="generalContent">
     <a href="#"></a><h1 class="title">{{data.name}}</h1>
-    
+
     <h3 class="sectionTitle">This project is Powered by:</h3>
     <ul class="listCont">
         <li *ngFor="let lang of langs">
@@ -9,8 +9,12 @@
     </ul>
 
     <img src="assets/img/projects/{{data.image}}" class="imgProject"/>
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam at quibusdam sint iste, ut voluptate molestias dignissimos natus ratione qui numquam porro perspiciatis debitis veritatis eveniet dolorem fugit illo.{{data.description}}</p>
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam at quibusdam sint iste, ut voluptate molestias dignissimos natus ratione qui numquam porro perspiciatis debitis veritatis eveniet dolorem fugit illo.{{data.description}}</p>
+      <ul class="">
+        <li *ngFor="let paragraph of description" class="paragraphList">
+            <p class="description">{{paragraph}}</p>
+        </li>
+      </ul>
+    <!--<p class="description">{{data.description}}</p>-->
     <p><a  class="links" href="{{data.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></p>
     <p><a class="links" href="{{data.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></p>
 </div>

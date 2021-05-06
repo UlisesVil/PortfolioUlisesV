@@ -21,7 +21,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ProjectDialogComponent } from './components/project-dialog/project-dialog.component';
 import { CertificationDialogComponent } from './components/certification-dialog/certification-dialog.component';
-
+import { MessageService } from './services/message.service';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CertificationDialogComponent } from './components/certification-dialog/
     ExperienceComponent,
     MainNavComponent,
     ProjectDialogComponent,
-    CertificationDialogComponent
+    CertificationDialogComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +56,7 @@ import { CertificationDialogComponent } from './components/certification-dialog/
   ],
   providers: [
     appRoutingProviders,
+    MessageService,
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]

@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ulises Villa Portfolio';
+  today: number = Date.now();
 }
