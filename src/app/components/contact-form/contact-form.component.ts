@@ -5,6 +5,8 @@ import { DownloadService } from '../../services/download.service';
 import * as fileSaver from 'file-saver';
 import swal from 'sweetalert';
 import { onErrorResumeNext } from 'rxjs';
+import { FormsModule } from '@angular/forms';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
 @Component({
   selector: 'contact-form',
@@ -28,6 +30,8 @@ export class ContactFormComponent implements OnInit {
     this._MessageService.sendMessage(form).subscribe(()=>{
       swal("Thank You!!!", "I have received your message and I will contact you shortly.",'success');
     });
+    console.log(form);;
+
   }
 
 

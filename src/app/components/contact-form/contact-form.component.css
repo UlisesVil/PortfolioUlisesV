@@ -105,6 +105,40 @@ h2{
   width: 100%;
 }
 
+.sendButton{
+  background: black;
+  color: white;
+}
+.sendButton:disabled{
+  background: rgba(0, 0, 0, 0.329);
+  color: gray;
+  cursor: not-allowed;
+}
+
+
+.form_valid{
+  display: block;
+  font-size: 15px;
+  padding: 3px;
+  color: rgb(30, 255, 0);
+  margin-left: 5px;
+}
+
+.form_error{
+  display: block;
+  font-size: 15px;
+  padding: 3px;
+  color: red;
+  margin-left: 5px;
+}
+
+
+
+.formButton{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
 
 @media screen and (max-width: 730px){
 
