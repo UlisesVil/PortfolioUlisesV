@@ -47,6 +47,10 @@
     font-family: "Romanesco";
     src: url("fonts/Romanesco-Regular.ttf");
 }
+@font-face{
+  font-family: "MedulaOne";
+  src: url("fonts/MedulaOne.ttf");
+}
 
 
 /*Generales*/
