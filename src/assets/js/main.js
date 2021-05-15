@@ -24,6 +24,8 @@ $(document).ready(function() {
     $("html").animate({ scrollTop: 0}, 5200);
     console.log('si funciona we');
  });
+
+
 });
 
 
