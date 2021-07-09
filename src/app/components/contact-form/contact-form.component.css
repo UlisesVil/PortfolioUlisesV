@@ -259,11 +259,11 @@ textarea:focus~.growingBar::before{
   .sectionsContainer{
     width: 100%;
     flex-direction: column;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
   .infoContainer{
     margin-top: 50px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     min-width: 400px;
   }
 }
