@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
 
   $(window).on('scroll', function() {
@@ -22,11 +23,27 @@ $(document).ready(function() {
 
   $('.arrow').click(function(){
     $("html").animate({ scrollTop: 0}, 5200);
-    console.log('si funciona we');
+    //console.log('si funciona we');
  });
 
 
+ ScrollReveal().reveal('.project', {delay:500});
+ ScrollReveal().reveal('.element', {delay:500});
+ ScrollReveal().reveal('.imgContent', {delay:500});
+ ScrollReveal().reveal('.formContainer', {delay:500});
+ ScrollReveal().reveal('.resume', {delay:500});
+ ScrollReveal().reveal('.social', {delay:500});
+
+
+
+
+
+
+
 });
+
+
+//Typed
 
 
 
