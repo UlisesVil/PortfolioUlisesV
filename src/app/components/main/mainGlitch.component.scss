@@ -34,11 +34,11 @@ html, body {
   //@include user-select(none);
 }
 
-span:first-of-type {
+em:first-of-type {
   margin-right: 5px;
 }
 
-span:first-of-type {
+em:first-of-type {
   color: $background;
   background-color: $background;
   animation: fadeWhite 4s forwards;

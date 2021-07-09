@@ -23,7 +23,7 @@ export class MainComponent implements OnInit {
       e.preventDefault();
       $('html,body').animate({
         scrollTop: $(this.hash).offset().top
-      }, 900);
+      }, 3000);
     });
 
     function mainScroll() {
@@ -53,7 +53,10 @@ export class MainComponent implements OnInit {
         $('.downArrow').show();
       }
     });
+
+
   }
+
 
 
 

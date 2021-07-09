@@ -20,9 +20,11 @@ h3, p{
     /*font-family: TenaliRamakrishna;*/
 }
 
+
 h3{
     margin-top: 5px;
 }
+
 
 
 
@@ -49,6 +51,12 @@ a{
     cursor: pointer;
 }
 
+a:hover,
+.fa-clipboard-list:hover,
+.fa-github-alt:hover,
+.fa-globe:hover{
+  color: yellowgreen;
+}
 
 
 .card_layer{
@@ -102,6 +110,7 @@ a{
     font-family: CormorantUpright;
     font-size: 20px;
 }
+
 
 .linksCont{
     margin-top: -50px;

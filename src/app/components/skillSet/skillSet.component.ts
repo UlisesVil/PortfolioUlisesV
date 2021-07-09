@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any; 
+declare var $:any;
 
 @Component({
   selector: 'app-skillSet',
@@ -13,12 +13,12 @@ export class SkillSetComponent implements OnInit {
 
 
   constructor(){
-    this.title = "My Projects are powered by:";
+    this.title = "Skill Set:";
   }
 
   ngOnInit(): void {
 
-   
+
        this.elements=[
         {
           name:'JavaScript',
@@ -31,6 +31,9 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'React',
+        },
+        {
+          name:'TypeScript',
         },
         {
           name:'jQuery',
@@ -46,7 +49,8 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'CSS 3',
-        },{
+        },
+        {
           name:'PHP',
         },
         {
@@ -54,7 +58,8 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'Simfony',
-        },{
+        },
+        {
           name:'My SQL',
         },
         {
@@ -62,7 +67,8 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'Git Hub',
-        },{
+        },
+        {
           name:'Git GUI',
         },
         {
@@ -70,7 +76,8 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'Net Beans',
-        },{
+        },
+        {
           name:'Postman',
         },
         {
@@ -78,9 +85,6 @@ export class SkillSetComponent implements OnInit {
         },
         {
           name:'WordPress',
-        },
-        {
-          name:'TypeScript',
         },
         {
           name:'Heroku',
@@ -91,19 +95,19 @@ export class SkillSetComponent implements OnInit {
       ];
 
 
-    
+
       window.addEventListener('load', this.coverAnimate);
       window.addEventListener('load', this.addAnimate);
-    
+
   }
 
 
-    
+
   coverAnimate(){
     var cardCover = document.querySelectorAll('.cardCover');
     console.log(cardCover);
     cardCover.forEach((card) => {
-    
+
       $('.element').mouseenter(function(){
         $(this).find('.cardCover').removeClass('leave');
         $(this).find('.cardCover').addClass('enter');
@@ -112,7 +116,7 @@ export class SkillSetComponent implements OnInit {
         $(this).find('.cardCover').removeClass('enter');
         $(this).find('.cardCover').addClass('leave');
       });
-    
+
 
     });
   }
@@ -126,7 +130,7 @@ export class SkillSetComponent implements OnInit {
         let randomNumber=Math.floor(Math.random()*Math.floor(6));
         console.log(randomNumber);
         switch(randomNumber){
-          case 0: 
+          case 0:
           $(this).find('.cardCover').addClass('colorOne');
           $(this).find('.cardCover').removeClass('colorTwo');
           $(this).find('.cardCover').removeClass('colorThree');
@@ -134,7 +138,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFive');
           $(this).find('.cardCover').removeClass('colorSix');
           break;
-          case 1: 
+          case 1:
           $(this).find('.cardCover').addClass('colorTwo');
           $(this).find('.cardCover').removeClass('colorOne');
           $(this).find('.cardCover').removeClass('colorThree');
@@ -142,7 +146,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFive');
           $(this).find('.cardCover').removeClass('colorSix');
           break;
-          case 2: 
+          case 2:
           $(this).find('.cardCover').addClass('colorThree');
           $(this).find('.cardCover').removeClass('colorOne');
           $(this).find('.cardCover').removeClass('colorTwo');
@@ -150,7 +154,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFive');
           $(this).find('.cardCover').removeClass('colorSix');
           break;
-          case 3: 
+          case 3:
           $(this).find('.cardCover').addClass('colorFour');
           $(this).find('.cardCover').removeClass('colorOne');
           $(this).find('.cardCover').removeClass('colortwo');
@@ -158,7 +162,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFive');
           $(this).find('.cardCover').removeClass('colorSix');
           break;
-          case 4: 
+          case 4:
           $(this).find('.cardCover').addClass('colorFive');
           $(this).find('.cardCover').removeClass('colorOne');
           $(this).find('.cardCover').removeClass('colortwo');
@@ -166,7 +170,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFour');
           $(this).find('.cardCover').removeClass('colorSix');
           break;
-          case 5: 
+          case 5:
           $(this).find('.cardCover').addClass('colorSix');
           $(this).find('.cardCover').removeClass('colorOne');
           $(this).find('.cardCover').removeClass('colortwo');
@@ -174,7 +178,7 @@ export class SkillSetComponent implements OnInit {
           $(this).find('.cardCover').removeClass('colorFour');
           $(this).find('.cardCover').removeClass('colorFive');
           break;
-        }  
+        }
       });
       $('.element').mouseleave(function(){
         $(this).find('.cardCover').removeClass('colorOne', 'colorTwo','colorThree', 'colorFour', 'colorFive', 'colorSix');
@@ -203,7 +207,7 @@ function adjustWidth() {
         let height=$(this).find('.skillContainer').css('width');
         $(this).find('h2').animate({height: height},'fast','swing');
       });
-    
+
       $('.element').mouseleave(function(){
         $(this).find('h2').css('display','none');
         let height=$(this).find('.skillContainer').css('width');

@@ -28,7 +28,7 @@ export class ContactFormComponent implements OnInit {
 
   contactForm(form){
     this._MessageService.sendMessage(form).subscribe(()=>{
-      swal("Thank You!!!", "I have received your message and I will contact you shortly.",'success');
+      swal("Thank You!!! "+form.name+' '+form.lastName, "I have received your message and I will contact you shortly.",'success');
     });
     console.log(form);;
 

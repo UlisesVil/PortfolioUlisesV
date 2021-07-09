@@ -20,11 +20,11 @@
 
     <mat-nav-list>
       <ul class="ulNav">
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust"> - Web Developer</span></a></li>
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
-        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav" href="#contactContainer" title="Send me an email" [routerLinkActive]="['actived']">Contact</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav mainSection" [routerLinkActive]="['actived']">Ulises Villa<span class="fontadjust"> - Web Developer</span></a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav projectSection" [routerLinkActive]="['actived']">Portfolio</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav skillSection" [routerLinkActive]="['actived']">Skill Set</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav experienceSection" [routerLinkActive]="['actived']">Certifications</a></li>
+        <li class="liNav" (click)="drawer.toggle();menuOff()"><a class="linkNav contactSection" [routerLinkActive]="['actived']" title="Send me an email">Contact</a></li>
       </ul>
     </mat-nav-list>
   </mat-sidenav>
@@ -42,12 +42,12 @@
       </button>
 
       <ul class="ulToolbar">
-        <li id="itemsLeft" class="liToollbar"><a class="linkToolbar" href="#mainContent" [routerLinkActive]="['actived']">Ulises Villa <span class="fontadjust"> - Web Developer</span></a></li>
+        <li id="itemsLeft" class="liToollbar"><a class="linkToolbar mainSection" [routerLinkActive]="['actived']">Ulises Villa <span class="fontadjust"> - Web Developer</span></a></li><!--href="#mainContent"-->
         <div class="itemsRight">
-          <li class="liToollbar"><a class="linkToolbar" href="#portfolioContent" [routerLinkActive]="['actived']">Portfolio</a></li>
-          <li class="liToollbar"><a class="linkToolbar" href="#skillSet" [routerLinkActive]="['actived']">Skill Set</a></li>
-          <li class="liToollbar"><a class="linkToolbar" href="#experience" [routerLinkActive]="['actived']">Certifications</a></li>
-          <li class="liToollbar"><a class="linkToolbar" href="#contactContainer" title="Send me an email" [routerLinkActive]="['actived']">Contact</a></li>
+          <li class="liToollbar"><a class="linkToolbar projectSection" [routerLinkActive]="['actived']">Portfolio</a></li><!--href="#portfolioContent"-->
+          <li class="liToollbar"><a class="linkToolbar skillSection" [routerLinkActive]="['actived']">Skill Set</a></li><!--href="#skillSet"-->
+          <li class="liToollbar"><a class="linkToolbar experienceSection" [routerLinkActive]="['actived']">Certifications</a></li> <!--href="#experience"-->
+          <li class="liToollbar"><a class="linkToolbar contactSection" title="Send me an email" [routerLinkActive]="['actived']">Contact</a></li><!--href="#contactContainer"-->
        </div>
       </ul>
     </mat-toolbar>

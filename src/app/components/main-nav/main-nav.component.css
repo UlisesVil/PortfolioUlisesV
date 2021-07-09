@@ -31,13 +31,13 @@ mat-icon{
   justify-content: left;
   margin: 0px auto;
   margin-top: -3px;
-  
+
 }
 
 .liNav{
   display: inline-block;
   line-height: 40px;
- 
+
 }
 
 .linkNav{
@@ -57,7 +57,7 @@ mat-icon{
 
 .linkNav:hover,
 .linkToolbar:hover,
-.actived{      
+.actived{
   color: yellowgreen;
 }
 
@@ -90,8 +90,9 @@ mat-icon{
   transition: all 800ms;
   cursor: pointer;
   padding-top: 3px;
-  
+
 }
+
 
 .fontadjust{
   font-size: 17px;
@@ -102,7 +103,12 @@ mat-icon{
   .linkToolbar{
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 15px;
   }
+  .fontadjust{
+    font-size: 15px;
+  }
+
 }
 
 @media (min-width: 600px){
@@ -114,7 +120,7 @@ mat-icon{
   }
 }
 
-@media (max-width: 599px){  
+@media (max-width: 599px){
   .ulToolbar{
     display: none;
   }

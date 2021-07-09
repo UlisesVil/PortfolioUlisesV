@@ -6,7 +6,7 @@
   box-shadow: 0px 0px 40px black;
   /*background: rgba(255, 255, 255, 0.7);*/
   /*padding-top: 50px;*/
-  background: url(../../../assets/img/images/06.jpg);
+  background: black;
   color: white;
   text-shadow: 5px 5px 5px black;
   /*border: 1px solid red;*/
@@ -60,9 +60,16 @@ h1{
   /*background: rgba(0,0,0,.7);
   padding: 0px 30px;
   border-radius: 5px;*/
+
+  background-color:rgba(255,255,255,0.1) ;
+  padding: 0px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(255,255,255,0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 20px 5px rgba(255, 255, 255, 0.1);
 }
 
-h2{
+h2, #words{
   position: relative;
   line-height: 1.2;
   margin: 0px auto;
@@ -76,8 +83,11 @@ h2{
   /*text-shadow: 3px 3px 5px rgb(148, 148, 148);*/
   color: rgb(255, 255, 255);
   /*background: rgba(0,0,0,.7);*/
-  padding: 0px 30px;
+  padding: 10px 30px;
   border-radius: 5px;
+  text-align: center;
+  width: 450px;
+  height: 70px;
 
 }
 
@@ -90,7 +100,6 @@ h2{
   z-index: 1;
   text-shadow: 3px 3px 5px rgb(148, 148, 148);
   color: yellowgreen;*/
-
 }
 
 .full-image {
@@ -150,6 +159,7 @@ h2{
   background-position: center;
   text-align: center;
   font-size: 30px;
+  /*color: rgb(255, 217, 0);*/
 }
 .bounce{
   -moz-animation: bounce 2s infinite;
@@ -158,12 +168,14 @@ h2{
 }
 
 
+
 @media screen and (max-width: 500px){
   h1{
     font-size: 3rem;
   }
 
   h2{
-    font-size: 1rem;
+    width: fit-content;
+    font-size: 1.5rem;
   }
 }

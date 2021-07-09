@@ -1,76 +1,105 @@
 <div id="contactContainer">
 
-  <!--<div class="logo">Contact Me</div>-->
+  <h2 id="contact">Contact</h2>
 
-  <div class="formContainer mt-5">
-    <h2 id="contact" class="title">Contact Me</h2>
-    <form (ngSubmit)="contactForm(form.value); form.resetForm()" #form="ngForm">
-      <div class="form-group">
-        <!--<label>Name</label>-->
-        <input type="text" class="form-control" name="name" placeholder="Name" #name="ngModel" [(ngModel)]="form.name" required/>
-        <span class="form_error" *ngIf="name.touched && !name.valid">
-          <strong>*Name is required</strong>
-      </span>
-      </div>
-      <div class="form-group">
-        <!--<label>Subject</label>-->
-        <input type="text" class="form-control" name="subject" placeholder="Subject" #subject="ngModel" [(ngModel)]="form.subject" required/>
-        <span class="form_error" *ngIf="subject.touched && !subject.valid">
-          <strong>*Subject is required</strong>
-        </span>
-      </div>
-      <div class="form-group">
-        <!--<label>E-mail</label>-->
-        <input type="email" class="form-control" name="email" placeholder="E-mail"  #email="ngModel" [(ngModel)]="form.email" [email]="true" required/>
-        <span class="form_error" *ngIf="email.touched && !email.valid">
-          <strong>*This field is required please enter a valid E-mail</strong>
-        </span>
+  <div class="sectionsContainer">
+    <div class="formContainer mt-5">
+      <p class="titles">Send me a message:</p>
+      <form (ngSubmit)="contactForm(form.value); form.resetForm()" #form="ngForm" autocomplete="off">
 
-      </div>
-      <div class="form-group">
-        <!--<label>Message</label>-->
-        <textarea class="form-text" cols="30" rows="6" name="message" placeholder="Message" #message="ngModel" [(ngModel)]="form.message" required></textarea>
-        <span class="form_error" *ngIf="message.touched && !message.valid">
-          <strong>*Message is required</strong>
-        </span>
-      </div>
-      <div class="formButton">
-        <button type="submit" class="sendButton" [disabled]="!form.form.valid">Send</button>
-        <span class="form_error buttonwarning" *ngIf="!form.form.valid">
-          <strong>*Button disabled Please check data and email to send mesage</strong>
-        </span>
-        <span class="form_valid buttonwarning" *ngIf="form.form.valid">
-          <strong>*Button Enabled You can send your mesage</strong>
-        </span>
-      </div>
-    </form>
-  </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="form.name" required/><span class="growingBar"></span>
+          <label>Name</label>
+          <span class="form_error" *ngIf="name.touched && !name.valid">
+            <strong>* Name is required</strong>
+          </span>
+        </div>
 
-  <div class="infoContainer">
-    <a (click)="download()">View resume</a>
-    <a (click)="download2()">Download resume</a>
-    <nav>
-      <ul class="ulFooter">
-        <li class="liTitle">My social networks:</li>
-        <li class="liFooter">
+        <div class="form-group">
+          <input type="text" class="form-control" name="lastName" #lastName="ngModel" [(ngModel)]="form.lastName" required/><span class="growingBar"></span>
+          <label>Last Name</label>
+          <span class="form_error" *ngIf="lastName.touched && !lastName.valid">
+            <strong>* Last name is required</strong>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" #subject="ngModel" [(ngModel)]="form.subject" required/><span class="growingBar"></span>
+          <label>Subject</label>
+          <span class="form_error" *ngIf="subject.touched && !subject.valid">
+            <strong>* Subject is required</strong>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <input type="email" class="form-control mail" name="email"  #email="ngModel" [(ngModel)]="form.email" [email]="true" required/><span class="growingBar"></span>
+          <label>E-mail</label>
+          <span class="form_error" *ngIf="email.touched && !email.valid">
+            <strong>* Please enter a valid E-mail</strong>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-text" cols="30" rows="6" name="message" #message="ngModel" [(ngModel)]="form.message" required></textarea><span class="growingBar"></span>
+          <label>Message</label>
+          <span class="form_error" *ngIf="message.touched && !message.valid">
+            <strong>* Message is required</strong>
+          </span>
+        </div>
+
+        <div class="formButton">
+          <button type="submit" class="sendButton" [disabled]="!form.form.valid">Send</button>
+          <span class="form_error buttonwarning" *ngIf="!form.form.valid">
+            <strong><i class="fas fa-ban"></i> You can unlock this button with valid data</strong>
+          </span>
+          <span class="form_valid buttonwarning" *ngIf="form.form.valid">
+            <strong><i class="far fa-check-circle"></i> Woah! You have unlocked the button</strong>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    <div class="infoContainer">
+
+      <div class="resume">
+        <div class="InternalElements">
+          <p class="titles">My Resume</p>
+          <a (click)="download()">
+            <!--<img class="icon" src="./assets/img/contact/curriculum-resume-svgrepo-com (1).svg">-->
+            <img class="icon" src="./assets/img/contact/curriculum-resume-svgrepo-com (1).svg">
+            View
+          </a>
+          <a (click)="download2()">
+            <img class="icon" src="./assets/img/contact/download-svgrepo-com (4).svg">
+            Download
+          </a>
+        </div>
+        <img class="iconBig" src="./assets/img/contact/undrawOnlineCv.svg">
+      </div>
+
+      <div class="social">
+        <div class="InternalElements">
+          <p class="titles">You can find me in:</p>
           <a href="https://twitter.com/ulivelanky" target="_blank">
-            <img src="./assets/img/contact/twitter-svgrepo-com (7).svg">
+            <img class="icon" src="./assets/img/contact/twitter-svgrepo-com (5).svg">
+            Twitter
           </a>
-        </li>
-        <li class="liFooter">
-          <a href="https://www.linkedin.com/in/ulises-villa-b27832110/" target="_blank">
-            <img src="./assets/img/contact/linkedin-svgrepo-com (8).svg">
-          </a>
-        </li>
-        <!--<li class="liFooter mail">
-          <a  href="mailto:ulisesvil5@hotmail.com">
-            <img src="./assets/img/contact/email-svgrepo-com (5).svg">
-          </a>
-        </li>-->
-      </ul>
-    </nav>
-  </div>
 
+          <a href="https://www.linkedin.com/in/ulises-villa-b27832110/" target="_blank">
+            <img class="icon" src="./assets/img/contact/linkedin-svgrepo-com (10).svg">
+            Linkedin
+          </a>
+
+          <a href="https://github.com/UlisesVil" target="_blank">
+            <img class="icon" src="./assets/img/contact/github-svgrepo-com.svg">
+            GitHub
+          </a>
+        </div>
+        <img class="iconBig" src="./assets/img/contact/social (4).svg">
+      </div>
+
+    </div>
+  </div>
 </div>
 
 
