@@ -34,6 +34,7 @@ h2{
 
 .infoContainer{
   width: 45%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   /*border: 1px solid red;*/
@@ -49,14 +50,19 @@ h2{
   background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgb(112, 112, 112) 86%);
   /*background: linear-gradient(255deg, rgba(0,0,0,1) 0%, rgba(102,16,16,1) 86%);*/
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.5);
+
 }
 
-.InternalElements{
+.internalElements{
   display: flex;
   flex-direction: column;
 
   padding-left: 10px;
   padding-bottom: 10px;
+}
+
+.internalElements a{
+  font-family: CormorantUpright;
 }
 .social{
   margin-top: 30px;
@@ -94,7 +100,7 @@ h2{
 }
 
 .iconBig{
-  width: 210px;
+  width: 50%;
   padding: 10px;
 }
 
@@ -182,6 +188,7 @@ label{
   top: 10px;
   transition: 0.5s ease-in-out all;
   pointer-events: none;
+  font-family: CormorantUpright;
 }
 
 .growingBar{
@@ -222,6 +229,11 @@ textarea:focus~.growingBar::before{
 .sendButton{
   background: black;
   color: white;
+  font-family: CormorantUpright;
+}
+
+span{
+  font-family: CormorantUpright;
 }
 .sendButton:disabled{
   background: rgba(0, 0, 0, 0.329);
@@ -264,8 +276,21 @@ textarea:focus~.growingBar::before{
   .infoContainer{
     margin-top: 50px;
     /*border: 1px solid red;*/
-    min-width: 400px;
+
   }
+
+  .infoContainer{
+    width: 80%;
+    max-width: 500px;
+  }
+  .formContainer{
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 810px){
+
 }
 
 @media screen and (max-width: 730px){
@@ -286,8 +311,21 @@ textarea:focus~.growingBar::before{
   }
   .formContainer{
     width: 80%;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 
+  }
+
+  .iconBig{
+    /*width: 150px;*/
+  }
+
+  .internalElements a{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoContainer{
+    width: 80%;
   }
 
 }
@@ -301,20 +339,19 @@ textarea:focus~.growingBar::before{
     padding: 10px;
 
   }
-  .liFooter{
-    list-style: none;
-    width: 40px;
-    padding: 5px;
-    /*border: 1px solid yellowgreen;*/
-  }
+
 
   .infoContainer{
     width: 100%;
   }
+
+
+
+
 }
 
 @media screen and (max-width: 500px){
    .infoContainer{
-    width: 80%;
+    width: 100%;
   }
 }

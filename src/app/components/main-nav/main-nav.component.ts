@@ -111,7 +111,7 @@ export class MainNavComponent {
 
   menuOn(){
     $('#transparentWall').attr('style','background:rgba(0, 0, 0, 0.02); width: 100%; height: 100vh;');
-    $('mat-toolbar').attr('style','background:red; height: 50px;');
+    $('mat-toolbar').attr('style','background:rgba(0, 0, 0, 0.438); height: 50px;');
   }
 
   menuOff(){

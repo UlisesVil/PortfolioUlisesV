@@ -377,10 +377,14 @@ body.tight .wrapper{
   font-size: 40px;
 }
 
+
 @media (min-width: 600px){
 
     #transparentWall{
         display: none;
+    }
+    footer{
+      margin: 0 auto;
     }
 }
 
