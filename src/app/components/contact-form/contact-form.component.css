@@ -119,6 +119,15 @@ textarea:focus~.growingBar::before{
   background: black;
   color: white;
   font-family: CormorantUpright;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sendButton:hover{
+  text-shadow: 2px 2px 3px white;
+  box-shadow: 2px 2px 10px white;
 }
 
 span{
