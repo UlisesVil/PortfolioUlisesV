@@ -1,12 +1,5 @@
-/*@font-face{
-  font-family: "MedulaOne";
-  src: url("../../../assets/css/fonts/MedulaOne.ttf");
-}*/
-
 $background: transparent;
 $foreground: white;
-
-//@import 'bourbon';
 
 @mixin gitchText($offset, $text) {
   content: $text;
@@ -22,16 +15,15 @@ $foreground: white;
 
 html, body {
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   background-color: $background;
   color: $foreground;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'MedulaOne', sans-serif;
   font-size: 3em;
-  //@include user-select(none);
 }
 
 em:first-of-type {

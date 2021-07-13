@@ -1,54 +1,78 @@
-
-
-.card{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 3px 3px 15px 5px black;
+h2{
+  font-family: CormorantUpright;
+  text-shadow: 3px 3px 5px white;
 }
 
-h2{
-    font-family: CormorantUpright;
-    text-shadow: 3px 3px 5px white;
+.card{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px 5px black;
 }
 
 h3, p{
-    font-family: Arapey;
-    text-shadow: 3px 3px 5px white;
-    /*font-family: Katibeh;*/
-    /*font-family: TenaliRamakrishna;*/
+  font-family: Arapey;
+  text-shadow: 3px 3px 5px white;
 }
-
 
 h3{
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
-
-
-
 .project img{
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.card_layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 157%;
+  left: 0;
+  justify-content: center;
+  align-content: center;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  transform: skewY(30deg);
+  font-family: CormorantUpright;
+}
+
+.card_title,
+.card_description{
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-shadow: 5px 5px 3px black;
+  font-family: CormorantUpright;
+  font-size: 20px;
+  transform: skewY(-30deg);
+}
+
+.linksCont{
+  margin-top: -50px;
+  margin-left: -50px;
 }
 
 .fa-clipboard-list{
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 .fa-clipboard-list,
 .fa-github-alt,
 .fa-globe{
-    margin-right: 8px;
-    color: white;
-
+  margin-right: 8px;
+  color: white;
 }
 
 a{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 a:hover,
@@ -58,207 +82,171 @@ a:hover,
   color: yellowgreen;
 }
 
+.detail{
+  margin-left: 10%;
+}
 
-.card_layer{
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 157%;
-    left: 0;
-    justify-content: center;
-    align-content: center;
-    /*border-radius: 10px;*/
-    animation-duration: .3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    transform: skewY(30deg);
-    font-family: CormorantUpright;
+.site{
+  margin-top: -10px;
+  margin-left: 30%;
+}
 
+.git{
+  margin-top: -10px;
+  margin-left: 50%;
 }
 
 .colorOne{
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(0, 174, 255) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(0, 174, 255) 100%);
 }
 .colorTwo{
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 0, 0) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 0, 0) 100%);
 }
 .colorThree{
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(30, 255, 0) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(30, 255, 0) 100%);
 }
 .colorFour{
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(4, 0, 255) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(4, 0, 255) 100%);
 }
 .colorFive{
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(238, 255, 0) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(238, 255, 0) 100%);
 }
 .colorSix{
-    /*background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(0, 204, 255) 100%);*/
-    background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 115, 0) 100%);
+  background: linear-gradient(138deg, rgba(0, 0, 0, 0.74) 25%, rgb(255, 115, 0) 100%);
 }
-
-
-.card_title,
-.card_description{
-    display: block;
-    width: 100%;
-    text-align: left;
-    text-shadow: 5px 5px 3px black;
-    /*margin-left: 20%;*/
-    transform: skewY(-30deg);
-    font-family: CormorantUpright;
-    font-size: 20px;
-}
-
-
-.linksCont{
-    margin-top: -50px;
-    margin-left: -50px;
-}
-.detail{
-    margin-left: 10%;
-}
-.site{
-    margin-top: -10px;
-    margin-left: 30%;
-}
-.git{
-    margin-top: -10px;
-    margin-left: 50%;
-}
-
 
 .enter-top{
-    animation-name: enterTop;
+  animation-name: enterTop;
 }
 .enter-bottom{
-    animation-name: enterBottom;
+  animation-name: enterBottom;
 }
 .enter-left{
-    animation-name: enterLeft;
+  animation-name: enterLeft;
 }
 .enter-right{
-    animation-name: enterRight;
+  animation-name: enterRight;
 }
 
 .leave-top{
-    animation-name: leaveTop;
+  animation-name: leaveTop;
 }
 .leave-bottom{
-    animation-name: leaveBottom;
+  animation-name: leaveBottom;
 }
 .leave-left{
-    animation-name: leaveLeft;
+  animation-name: leaveLeft;
 }
 .leave-right{
-    animation-name: leaveRight;
+  animation-name: leaveRight;
 }
 
-
 @keyframes enterTop{
-    from{
-        top: -157%;
-        left: 0;
-    }
-    to{
-        top: 0;
-        left: 0;
-    }
+  from{
+    top: -157%;
+    left: 0;
+  }
+  to{
+    top: 0;
+    left: 0;
+  }
 }
 
 @keyframes leaveTop{
-    from{
-        top: 0;
-        left: 0;
-    }
-    to{
-        top: -157%;
-        left: 0;
-    }
+  from{
+    top: 0;
+    left: 0;
+  }
+  to{
+    top: -157%;
+    left: 0;
+  }
 }
 
 @keyframes enterBottom{
-    from{
-        top: 157%;
-        left: 0;
-    }
-    to{
-        top: 0;
-        left: 0;
-    }
+  from{
+    top: 157%;
+    left: 0;
+  }
+  to{
+    top: 0;
+    left: 0;
+  }
 }
 
 @keyframes leaveBottom{
-    from{
-        top: 0;
-        left: 0;
-    }
-    to{
-        top: 157%;
-        left: 0;
-    }
+  from{
+    top: 0;
+    left: 0;
+  }
+  to{
+    top: 157%;
+    left: 0;
+  }
 }
 
 @keyframes enterLeft{
-    from{
-        top: 0;
-        left: -157%;
-    }
-    to{
-        top: 0;
-        left: 0;
-    }
+  from{
+    top: 0;
+    left: -157%;
+  }
+  to{
+    top: 0;
+    left: 0;
+  }
 }
 
 @keyframes leaveLeft{
-    from{
-        top: 0;
-        left: 0;
-    }
-    to{
-        top: 0;
-        left: -157%;
-    }
+  from{
+    top: 0;
+    left: 0;
+  }
+  to{
+    top: 0;
+    left: -157%;
+  }
 }
 
 @keyframes enterRight{
-    from{
-        top: 0;
-        left: 157%;
-    }
-    to{
-        top: 0;
-        left: 0;
-    }
+  from{
+    top: 0;
+    left: 157%;
+  }
+  to{
+    top: 0;
+    left: 0;
+  }
 }
 
 @keyframes leaveRight{
-    from{
-        top: 0;
-        left: 0;
-    }
-    to{
-        top: 0;
-        left: 157%;
-    }
+  from{
+    top: 0;
+    left: 0;
+  }
+  to{
+    top: 0;
+    left: 157%;
+  }
 }
 
 @media screen and (max-width: 600px){
-    h2{
-        font-size: 20px;
-    }
-    .card_title{
-        font-size: 15px;
-    }
+  h2{
+    font-size: 20px;
+  }
 
-    .linksCont{
-        margin-top: -30px;
-    }
-    .projectTitle{
-        font-size: 17px;
-    }
-    .projectSub{
-        font-size: 15px;
-    }
+  .card_title{
+    font-size: 15px;
+  }
+
+  .linksCont{
+    margin-top: -30px;
+  }
+
+  .projectTitle{
+    font-size: 17px;
+  }
+
+  .projectSub{
+    font-size: 15px;
+  }
 }

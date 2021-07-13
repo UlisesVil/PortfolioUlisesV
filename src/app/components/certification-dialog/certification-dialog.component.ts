@@ -6,6 +6,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   templateUrl: './certification-dialog.component.html',
   styleUrls: ['./certification-dialog.component.css']
 })
+
 export class CertificationDialogComponent implements OnInit {
 
   constructor(
@@ -19,5 +20,4 @@ export class CertificationDialogComponent implements OnInit {
   onClickNo(): void{
     this.dialogRef.close();
   }
-
 }

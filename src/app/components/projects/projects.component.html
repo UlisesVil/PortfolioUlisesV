@@ -1,25 +1,38 @@
 <div id="portfolioContent" >
-    
-    <h2>Portfolio</h2>
 
-    <ul class="projectsCont">
-        <li  class="project" *ngFor='let element of elements'>
-            <div class="card">
-                <img class="imgzoom" src="assets/img/projects/{{element.image}}"/>
-                <div class="card_layer">
-                    <div class="linksCont">
-                        <h3 class="card_title detail"> <a (click)="openDialog(element)" ><i class="fas fa-clipboard-list"></i> Detail</a></h3>
-                        <h3 class="card_title site"><a title='Website' href="{{element.site}}" target="_blank"><i class="fas fa-globe"></i>Visit the Site</a></h3>
-                        <h3 class="card_title git"><a title='GitHub Repo'  href="{{element.git}}" target="_blank"><i class="fab fa-github-alt"></i>Go to the GitHub Repo</a></h3>
-                       
-                    </div>
-                </div>
-            </div>
-            <h3 class="projectTitle">{{element.name}}</h3>
-            <p class="projectSub">{{element.category}}</p>
-        </li>
-    </ul>
-    
+  <h2>Portfolio</h2>
+
+  <ul class="projectsCont">
+    <li  class="project" *ngFor='let element of elements'>
+      <div class="card">
+        <img class="imgzoom" src="assets/img/projects/{{element.image}}"/>
+        <div class="card_layer">
+          <div class="linksCont">
+            <h3 class="card_title detail">
+              <a (click)="openDialog(element)" >
+                <i class="fas fa-clipboard-list"></i>
+                Detail
+              </a>
+            </h3>
+            <h3 class="card_title site">
+              <a title='Website' href="{{element.site}}" target="_blank">
+                <i class="fas fa-globe"></i>
+                Visit the Site
+              </a>
+            </h3>
+            <h3 class="card_title git">
+              <a title='GitHub Repo'  href="{{element.git}}" target="_blank">
+                <i class="fab fa-github-alt"></i>
+                Go to the GitHub Repo
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <h3 class="projectTitle">{{element.name}}</h3>
+      <p class="projectSub">{{element.category}}</p>
+    </li>
+  </ul>
 </div>
 
 

@@ -5,10 +5,11 @@
   <div class="sectionsContainer">
     <div class="formContainer mt-5">
       <p class="titles">Send me a message:</p>
-      <form (ngSubmit)="contactForm(form.value); form.resetForm()" #form="ngForm" autocomplete="off">
 
+      <form (ngSubmit)="contactForm(form.value); form.resetForm()" #form="ngForm" autocomplete="off">
         <div class="form-group">
-          <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="form.name" required/><span class="growingBar"></span>
+          <input type="text" class="form-control" name="name" #name="ngModel" [(ngModel)]="form.name" required/>
+          <span class="growingBar"></span>
           <label>Name:</label>
           <span class="form_error" *ngIf="name.touched && !name.valid">
             <strong>* Name is required</strong>
@@ -16,7 +17,8 @@
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" name="lastName" #lastName="ngModel" [(ngModel)]="form.lastName" required/><span class="growingBar"></span>
+          <input type="text" class="form-control" name="lastName" #lastName="ngModel" [(ngModel)]="form.lastName" required/>
+          <span class="growingBar"></span>
           <label>Last Name:</label>
           <span class="form_error" *ngIf="lastName.touched && !lastName.valid">
             <strong>* Last name is required</strong>
@@ -24,7 +26,8 @@
         </div>
 
         <div class="form-group">
-          <input type="text" class="form-control" name="subject" #subject="ngModel" [(ngModel)]="form.subject" required/><span class="growingBar"></span>
+          <input type="text" class="form-control" name="subject" #subject="ngModel" [(ngModel)]="form.subject" required/>
+          <span class="growingBar"></span>
           <label>Subject:</label>
           <span class="form_error" *ngIf="subject.touched && !subject.valid">
             <strong>* Subject is required</strong>
@@ -32,7 +35,8 @@
         </div>
 
         <div class="form-group">
-          <input type="email" class="form-control mail" name="email"  #email="ngModel" [(ngModel)]="form.email" [email]="true" required/><span class="growingBar"></span>
+          <input type="email" class="form-control mail" name="email"  #email="ngModel" [(ngModel)]="form.email" [email]="true" required/>
+          <span class="growingBar"></span>
           <label>E-mail:</label>
           <span class="form_error" *ngIf="email.touched && !email.valid">
             <strong>* Please enter a valid E-mail</strong>
@@ -40,7 +44,8 @@
         </div>
 
         <div class="form-group">
-          <textarea class="form-text" cols="30" rows="6" name="message" #message="ngModel" [(ngModel)]="form.message" required></textarea><span class="growingBar"></span>
+          <textarea class="form-text" cols="30" rows="6" name="message" #message="ngModel" [(ngModel)]="form.message" required></textarea>
+          <span class="growingBar"></span>
           <label>Message:</label>
           <span class="form_error" *ngIf="message.touched && !message.valid">
             <strong>* Message is required</strong>
@@ -64,12 +69,11 @@
       <div class="resume">
         <div class="internalElements">
           <p class="titles">My Resume</p>
-          <a (click)="download()">
-            <!--<img class="icon" src="./assets/img/contact/curriculum-resume-svgrepo-com (1).svg">-->
+          <a (click)="viewDocument()">
             <img class="icon" src="./assets/img/contact/curriculum-resume-svgrepo-com (1).svg">
             View
           </a>
-          <a (click)="download2()">
+          <a (click)="downloadDocument()">
             <img class="icon" src="./assets/img/contact/download-svgrepo-com (4).svg">
             Download
           </a>
@@ -84,12 +88,10 @@
             <img class="icon" src="./assets/img/contact/twitter-svgrepo-com (5).svg">
             Twitter
           </a>
-
           <a href="https://www.linkedin.com/in/ulises-villa-b27832110/" target="_blank">
             <img class="icon" src="./assets/img/contact/linkedin-svgrepo-com (10).svg">
             Linkedin
           </a>
-
           <a href="https://github.com/UlisesVil" target="_blank">
             <img class="icon" src="./assets/img/contact/github-svgrepo-com.svg">
             GitHub

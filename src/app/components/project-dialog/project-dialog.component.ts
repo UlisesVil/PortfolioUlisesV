@@ -19,12 +19,8 @@ export class ProjectDialogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    console.log(this.data.langs);
     this.langs= this.data.langs.split(', ');
-    console.log(this.langs);
     this.description= this.data.description.split('*');
-    console.log(this.description);
-
   }
 
   onClickNo(): void{

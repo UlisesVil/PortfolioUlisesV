@@ -10,7 +10,6 @@ declare var $:any;
 })
 export class ProjectsComponent implements OnInit {
 
-  public url: string;
   public elements;
 
   constructor(
@@ -280,12 +279,10 @@ export class ProjectsComponent implements OnInit {
         "site" : "https://ulisesvil.github.io/project_rock_paper_scissors"
       }
     ];
-
     $(document).ready(this.addAnimate);
   }
 
   openDialog(project): void{
-
     const dialogRef = this.dialog.open(ProjectDialogComponent,{
       data: {
         name: project.name,
@@ -296,16 +293,13 @@ export class ProjectsComponent implements OnInit {
         site: project.site
       }
     });
-
   }
 
   addAnimate(){
     var cards = document.querySelectorAll('.card');
-
     cards.forEach((card) => {
       $('.card').mouseenter(function(){
         let randomNumber=Math.floor(Math.random()*Math.floor(6));
-        //console.log(randomNumber);
         switch(randomNumber){
           case 0:
           $(this).find('.card_layer').addClass('colorOne');
@@ -357,9 +351,12 @@ export class ProjectsComponent implements OnInit {
           break;
         }
       });
+
       $('.card').mouseleave(function(){
-        $(this).find('.card_layer').removeClass('colorOne', 'colorTwo','colorThree', 'colorFour', 'colorFive', 'colorSix');
+        $(this).find('.card_layer')
+          .removeClass('colorOne', 'colorTwo','colorThree', 'colorFour', 'colorFive', 'colorSix');
       });
+
     });
   }
 }

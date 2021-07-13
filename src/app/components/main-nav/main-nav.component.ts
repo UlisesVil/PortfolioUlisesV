@@ -12,7 +12,8 @@ declare var $:any;
 
 export class MainNavComponent {
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+  isHandset$: Observable<boolean> = this.breakpointObserver
+    .observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
       shareReplay()
@@ -32,19 +33,15 @@ export class MainNavComponent {
     }
     window.addEventListener('click',removeWall);
 
-
-
     $(document).ready(this.scrollToSection);
 
     $(document).ready(this.selectedMenu);
     window.addEventListener('scroll',this.selectedMenu);
-
   }
 
   selectedMenu(){
     let scrollHeight=$('html').scrollTop();
     let styles='color:yellowgreen; transform: scale(1.2);';
-
     let mainContentHeight=$('#mainContent').height()+parseInt($('#mainContent').css('padding-top'));
     let portfolioContentHeight=$('#portfolioContent').height()+parseInt($('#portfolioContent').css('padding-top'));
     let skillSetHeight=$('#skillSet').height()+parseInt($('#skillSet').css('padding-top'));

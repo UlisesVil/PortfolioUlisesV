@@ -1,13 +1,13 @@
 <div id="experience" class="wrapper">
 
-    <h2>Certifications</h2>
+  <h2>Certifications</h2>
 
-    <div id="contentCerts">
-        <div class="imgContent" *ngFor='let certification of certifications'>
-            <a (click)="openDialogImg(certification)">
-                <img src="{{certification.certImg}}" alt="{{certification.title}}" title="{{certification.title}}">
-            </a>
-        </div>
+  <div id="contentCerts">
+    <div class="imgContent" *ngFor='let certification of certifications'>
+      <a (click)="openDialogImg(certification)">
+        <img src="{{certification.certImg}}" alt="{{certification.title}}" title="{{certification.title}}">
+      </a>
     </div>
+  </div>
 
 </div>

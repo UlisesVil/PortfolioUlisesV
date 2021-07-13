@@ -1,32 +1,33 @@
 #dialogTop{
-    background: rgb(24,24,24,1);
-    color: whitesmoke;
+  background: rgb(24,24,24,1);
+  color: whitesmoke;
 }
 
 .title{
-    text-align: center;
-    margin-bottom: 5px;
-    font-family: CormorantUpright;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: CormorantUpright;
 }
+
 .sectionTitle{
-    margin-top: 30px;
-    text-align: left;
-    font-family: CormorantUpright;
+  margin-top: 30px;
+  text-align: left;
+  font-family: CormorantUpright;
 }
 
 .listCont{
-    width: fit-content;
-    margin: 20px;
-    list-style: symbols();
-    font-size: 18px;
-    font-family: K2D;
-    line-height: 10px;
-    margin-left: 35px;
+  width: fit-content;
+  margin: 20px;
+  list-style: symbols();
+  font-size: 18px;
+  font-family: K2D;
+  line-height: 10px;
+  margin-left: 35px;
 }
 
 .imgProject, p{
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
 }
 
 p{
@@ -48,69 +49,69 @@ p{
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:focus{
-    outline: none;
+  outline: none;
 }
 
 .fa-github-alt, .fa-globe{
-    margin-right: 8px;
-    font-size: 25px;
+  margin-right: 8px;
+  font-size: 25px;
 }
 
 .fa-github-alt{
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .links{
-    color: yellowgreen !important;
-    font-size: 15px;
-    font-family: K2D;
-    line-height: 22px;
+  color: yellowgreen !important;
+  font-size: 15px;
+  font-family: K2D;
+  line-height: 22px;
 }
 
 button{
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 1px solid white;
-    font-family: K2D !important;
-    font-size: 18px;
+  background: rgb(0, 0, 0);
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  font-family: K2D !important;
+  font-size: 18px;
 }
 
 button:hover{
-    border: 1px solid rgb(0, 0, 0);
-    font-family: K2D !important;
-    font-size: 18px;
-    box-shadow: 0px 0px 10px yellowgreen;
-    color: yellowgreen;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: K2D !important;
+  font-size: 18px;
+  color: yellowgreen;
+  box-shadow: 0px 0px 10px yellowgreen;
 }
 
 @media screen and (max-width:  750px){
-    .mat-dialog-content{
-        padding: 5px !important;
-    }
-    .title{
-        font-size: 25px;
-    }
-    .sectionTitle{
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .listCont{
-        font-size: 15px;
-    }
-    .description{
-        font-size: 15px;
-        line-height: 18px;
-    }
-    .fa-github-alt, .fa-globe{
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .links{
-        font-size: 17px;
-    }
+  .mat-dialog-content{
+    padding: 5px !important;
+  }
+  .title{
+    font-size: 25px;
+  }
+  .sectionTitle{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .listCont{
+    font-size: 15px;
+  }
+  .description{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .fa-github-alt, .fa-globe{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .links{
+    font-size: 17px;
+  }
 
 }

@@ -10,13 +10,13 @@ declare var $:any;
 })
 export class ExperienceComponent implements OnInit {
   public certifications;
- 
+
   constructor(
     public dialog: MatDialog
   ) { }
 
   ngOnInit() {
-   
+
     this.certifications=[
       {
         certImg:'assets/img/certifications/masterJS.jpg',
@@ -52,8 +52,6 @@ export class ExperienceComponent implements OnInit {
   }
 
   openDialogImg(certification): void{
-    //console.log(certification);
-    
     const dialogRef = this.dialog.open(CertificationDialogComponent,{
       data: {
         certImg: certification.certImg,
@@ -61,14 +59,5 @@ export class ExperienceComponent implements OnInit {
         certLink: certification.certLink,
       }
     });
-
-    dialogRef.afterClosed().subscribe(res =>{
-      console.log(res);
-      if(res){
-        console.log('esta es la res del dialog');
-        
-      }
-    });
   }
-  
 }

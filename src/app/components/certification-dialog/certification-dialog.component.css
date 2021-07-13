@@ -1,63 +1,62 @@
 img{
-    width: 100%;
-    max-width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 .lastElements{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-p{
-    margin-left: 10px;
-    color: whitesmoke;
-    font-family: K2D;
-    font-size: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: yellowgreen;
-    font-weight: 900;
-    font-family: K2D;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 button{
-    background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border: 1px solid white;
-    font-family: K2D !important;
-    font-size: 18px;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  font-family: K2D !important;
+  font-size: 18px;
 }
 
 button:hover{
-    border: 1px solid rgb(0, 0, 0);
-    font-family: K2D !important;
-    font-size: 18px;
-    box-shadow: 0px 0px 10px yellowgreen;
-    color: yellowgreen;
+  border: 1px solid rgb(0, 0, 0);
+  font-family: K2D !important;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px yellowgreen;
+  color: yellowgreen;
+}
+
+p{
+  margin-left: 10px;
+  color: whitesmoke;
+  font-family: K2D;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: yellowgreen;
+  font-weight: 900;
+  font-family: K2D;
 }
 
 @media screen and (max-width: 750px){
-    .mat-dialog-content{
-        padding: 5px !important;    
-    }
+  .mat-dialog-content{
+    padding: 5px !important;
+  }
 
-    .lastElements{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
+  .lastElements{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
 
-    p{
-        margin-left: 0px;
-        margin-bottom: 10px;
-        font-size: 15px;
-    }
+  p{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
 
-    a{
-        font-size: 17px;
-    }
+  a{
+    font-size: 17px;
+  }
 }

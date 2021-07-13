@@ -1,7 +1,3 @@
-mat-icon{
-  color: white;
-}
-
 .sidenav-container {
   background-color: rgba(48, 44, 44, 0.671);
 }
@@ -9,7 +5,6 @@ mat-icon{
 .sidenav {
   width: 60%;
   background-color: rgba(0, 0, 0, 0.788);
-
 }
 
 .sidenav.mat-toolbar {
@@ -24,21 +19,23 @@ mat-icon{
   z-index: 1;
 }
 
+mat-icon{
+  color: white;
+}
+
 .ulNav{
   display: flex;
   flex-direction: column;
+  justify-content: left;
   width: fit-content;
   height: fit-content;
-  justify-content: left;
   margin: 0px auto;
   margin-top: -3px;
-
 }
 
 .liNav{
   display: inline-block;
   line-height: 40px;
-
 }
 
 .linkNav{
@@ -53,7 +50,6 @@ mat-icon{
   color: white;
   transition: all 800ms;
   cursor: pointer;
-
 }
 
 .linkNav:hover,
@@ -86,15 +82,13 @@ mat-icon{
   height: fit-content;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 3px;
   text-decoration: none;
   font-size: 17px;
   color: white;
   transition: all 800ms;
   cursor: pointer;
-  padding-top: 3px;
-
 }
-
 
 .fontadjust{
   font-size: 10px;
@@ -107,8 +101,6 @@ mat-icon{
     padding-left: 5px;
     font-size: 13px;
   }
-
-
 }
 
 @media (min-width: 600px){
@@ -118,8 +110,6 @@ mat-icon{
   button{
     display: none;
   }
-
-
 }
 
 @media (max-width: 599px){

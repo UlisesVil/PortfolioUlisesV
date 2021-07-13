@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 declare var $:any;
-import {bourbon} from 'bourbon';
 
 @Component({
   selector: 'app-main',
@@ -38,26 +37,12 @@ export class MainComponent implements OnInit {
 
     window.addEventListener('scroll',mainScroll);
 
-
     $(window).on('scroll', function() {
-
-      //ADD .TIGHT
-      console.log($(window).scrollTop());
-      console.log($(window).height());
-      console.log($('#mainContainer').outerHeight());
       if ($(window).scrollTop() + $(window).height() > $('#mainContainer').outerHeight()+100) {
-
-
         $('.downArrow').hide();
       } else {
         $('.downArrow').show();
       }
     });
-
-
   }
-
-
-
-
 }

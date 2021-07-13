@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
 
 export class MessageService {
 
-  constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient)
+  { }
 
   sendMessage(body){
     return this._http.post('https://portfolio-mail-service.herokuapp.com/form', body);
   }
-
 }
