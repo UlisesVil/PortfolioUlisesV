@@ -3,6 +3,7 @@ import { MessageService } from '../../services/message.service';
 import { DownloadService } from '../../services/download.service';
 import * as fileSaver from 'file-saver';
 import swal from 'sweetalert';
+declare var $:any;
 
 @Component({
   selector: 'contact-form',
@@ -24,6 +25,7 @@ export class ContactFormComponent implements OnInit {
     this._MessageService.sendMessage(form).subscribe(()=>{
       swal("Thank You!!! "+form.name+' '+form.lastName, "I have received your message and I will contact you shortly.",'success');
     });
+    $('#emailLabel').removeClass("noEmpty");
   }
 
   returnBlob(res): Blob{
@@ -45,5 +47,13 @@ export class ContactFormComponent implements OnInit {
         fileSaver.saveAs(this.returnBlob(res), this.fileName);
       }
     });
+  }
+
+  addClass(){
+    if( $('#email').val() !== ""){
+      $('#emailLabel').addClass("noEmpty");
+    }else{
+      $('#emailLabel').removeClass("noEmpty");
+    }
   }
 }

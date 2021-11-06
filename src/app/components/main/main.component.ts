@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from "@angular/platform-browser";
 declare var $:any;
 
 @Component({
@@ -10,10 +11,14 @@ export class MainComponent implements OnInit {
 
   public title: string;
   public subtitle: string;
+  public videoTag;
 
-  constructor() {
+  constructor(
+    private sanitizer: DomSanitizer
+  ) {
     this.title = "Ulises Villa";
     this.subtitle="Web Developer";
+    this.videoTag = this.getVideoTag();
   }
 
   ngOnInit(): void {
@@ -46,5 +51,12 @@ export class MainComponent implements OnInit {
     });
   }
 
-
+  private getVideoTag() {
+    return this.sanitizer.bypassSecurityTrustHtml(
+      `<video id="vid" class="full-image" muted loop autoplay playsinline disableRemotePlayback>
+        <source src="assets/vids/016.mp4" type="video/mp4"/>
+        Your browser does not support HTML5 video.
+      </video>`
+    );
+  }
 }

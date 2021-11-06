@@ -35,9 +35,9 @@
         </div>
 
         <div class="form-group">
-          <input type="email" class="form-control mail" name="email"  #email="ngModel" [(ngModel)]="form.email" [email]="true" required/>
+          <input type="email" id="email" class="form-control mail" name="email"  #email="ngModel" [(ngModel)]="form.email" [email]="true" (keyup)="addClass()" required/>
           <span class="growingBar"></span>
-          <label>E-mail:</label>
+          <label id="emailLabel">Your E-mail:</label>
           <span class="form_error" *ngIf="email.touched && !email.valid">
             <strong>* Please enter a valid E-mail</strong>
           </span>

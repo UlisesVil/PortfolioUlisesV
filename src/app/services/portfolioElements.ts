@@ -1,21 +1,22 @@
 export var portfolioElements= [
   {
-    "name" : "Optical Character Recognition (OCR) Angular App.",
-    "description" : "This fully Responsive application is available on the web, built-in Angular on the Frontend, and communicates with a Node JS REST-API, deployed on Heroku on the backend. The database comes from Mongo DB Atlas."+
+    "name" : "Optical Character Recognition (OCR) Angular PWA.",
+    "description" : "This Progressive Web App (PWA) is fully Responsive and is available on the web, built-in Angular on the Frontend, and communicates with a Node JS REST-API, deployed on Heroku on the backend. The database comes from Mongo DB Atlas."+
+      "*Because it is a Progressive Web App (PWA), it can be installed as a desktop application or like an app on a mobile phone using the Chrome or Microsoft Edge browser. It will work while the user is not connected to the internet and saves the information in a local database in the browser, for later when the internet connection is re-established, all data stored in the local database will sync the online database."+
       "*The principal function of this application is the recognition of characters contained in an image using the Tesseract JS library. The user can obtain the text and use it as required."+
       "*This application has two modes, Quick OCR and Full OCR."+
       "*Quick ocr mode allows the user to extract the text from the image without saving it to the AWS S3 service and without logging in. user cannot save images in this mode."+
       "*The Full OCR mode requires the user to register and log in. The users will be able to save their images with a name and short description. the images will be saved in the AWS S3 service and the database and will be available for the user when login.",
     "category" : "Angular",
     "year" : 2021,
-    "langs" : "Angular, Tesseract JS Library, AWS S3, aws-sdk, bcrypt, dotenv, Mongoose, multer-S3, multer, JavaScript, TypeScript, NodeJS, MongoDB Atlas, ExpressJS, Sass, Heroku, JSON Web Token",
+    "langs" : "Angular, Angular Service Worker (PWA), Tesseract JS Library, AWS S3, aws-sdk, ng-connection-service, ngx-cookie-service, pouchdb-browser, bcrypt, dotenv, Mongoose, multer-S3, multer, JavaScript, TypeScript, NodeJS, MongoDB Atlas, ExpressJS, Sass, Heroku, JSON Web Token",
     "image" : "OCCApp.jpg",
     "git" : "https://github.com/UlisesVil/OCR-Angular-TesseractJS",
     "site" : "https://ulisesvil.github.io/OCR-Angular-TesseractJS"
   },
   {
     "name" : "API REST OCR Angular App.",
-    "description" : "This API works for the Angular App OCR application, is built with aws-sdk, bcrypt, dotenv, multer-S3, NodeJS, ExpressJS, and JSON Web Token. It manages both the information of the saved images and that of the registered users and saves the data in MongoDB Atlas using Mongoose."+
+    "description" : "This API works for the Angular - Optical Character Recognition Progressive Web App, is built with aws-sdk, bcrypt, dotenv, multer-S3, NodeJS, ExpressJS, and JSON Web Token. It manages both the information of the saved images and that of the registered users and saves the data in MongoDB Atlas using Mongoose."+
       "*This API saves the images it receives from the Front end in the AWS S3 service."+
       "*The deployment of this REST API is in the Heroku service."+
       "*This API Uses the JSON Web Token library to manage user sessions and their data, uses bcrypt to encrypt user login passwords when saving them in the database in MongoDB Atlas.",
@@ -27,8 +28,9 @@ export var portfolioElements= [
     "site" : "https://backend-angular-apps.herokuapp.com/ocrApp"
   },
   {
-    "name" : "HighCharts Angular App",
-    "description" : "This fully Responsive application is available on the web, built-in Angular on the Frontend, and communicates with a Node JS REST API deployed on Heroku on the backend."+
+    "name" : "HighCharts Angular PWA",
+    "description" : "This Progressive Web App (PWA) is fully Responsive and is available on the web, built-in Angular on the Frontend, and communicates with a Node JS REST API deployed on Heroku on the backend."+
+      "*Because it is a Progressive Web App (PWA), it can be installed as a desktop application or like an app on a mobile phone using the Chrome or Microsoft Edge browser. It will work while the user is not connected to the internet and saves the information in a local database in the browser, for later when the internet connection is re-established, all data stored in the local database will sync the online database."+
       "*The database comes from Mongo DB Atlas."+
       "*The principal function of this application is to display information through charts to help the user make decisions or only show data in a presentation."+
       "*The main page of this application shows four sections."+
@@ -40,14 +42,14 @@ export var portfolioElements= [
       "*On the left, the user has available the sidebar with the links to the editing sections of each chart and data table.",
     "category" : "Angular",
     "year" : 2021,
-    "langs" : "Angular, Highcarts Library, numeral Library, JavaScript, TypeScript, NodeJS, MongoDB Atlas, Mongoose, ExpressJS, Sass, Heroku",
+    "langs" : "Angular, Angular Service Worker (PWA), Highcarts Library, ng-connection-service, ngx-cookie-service, pouchdb-browser, numeral Library, JavaScript, TypeScript, NodeJS, MongoDB Atlas, Mongoose, ExpressJS, Sass, Heroku",
     "image" : "HighchartsApp.jpg",
     "git" : "https://github.com/UlisesVil/HighChartsAngularApp",
     "site" : "https://ulisesvil.github.io/HighChartsAngularApp"
   },
   {
     "name" : "API REST  HighCharts Angular App.",
-    "description" : "This API works for the HighCharts Angular App application. It is built with NodeJS, ExpressJS, dotenv, manages the labels and the values of the graphs and the table, and saves the data in MongoDB Atlas using Mongoose."+
+    "description" : "This API works for the HighCharts Angular Progressive Web App. It is built with NodeJS, ExpressJS, dotenv, manages the labels and the values of the graphs and the table, and saves the data in MongoDB Atlas using Mongoose."+
       "*The deployment of this REST API is in the Heroku service.",
     "category" : "NodeJS",
     "year" : 2021,

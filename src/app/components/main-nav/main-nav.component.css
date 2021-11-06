@@ -58,6 +58,16 @@ mat-icon{
   color: yellowgreen;
 }
 
+.mainSection{
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+}
+
+.fontadjustNav{
+  margin-left: 15px;
+}
+
 .ulToolbar{
   display: flex;
   flex-direction: row;
@@ -90,7 +100,8 @@ mat-icon{
   cursor: pointer;
 }
 
-.fontadjust{
+.fontadjust,
+.fontadjustNav{
   font-size: 10px;
   letter-spacing: 1px;
 }
